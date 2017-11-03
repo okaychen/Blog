@@ -17,35 +17,7 @@ textarea {
     outline: none;
 }
 
-body,
-dl,
-dd,
-ul,
-ol,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-form,
-fieldset,
-legend,
-input,
-textarea,
-optgroup,
-p,
-blockquote,
-figure,
-hr,
-menu,
-dir,
-thead,
-tbody,
-tfoot,
-th,
-td {
+body, dl, dd, ul, ol, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, textarea, optgroup, p, blockquote, figure, hr, menu, dir, thead, tbody, tfoot, th, td {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -197,7 +169,9 @@ a {
 .mt3 {
     margin-top: 3px;
 }
-
+.mt10 {
+    margin-top: 10px;
+}
 .mt35 {
     margin-top: 35px !important;
 }
@@ -223,6 +197,10 @@ ol {
     background: #fff;
 }
 
+
+i, cite, em, var, address, dfn {
+    font-style: italic;
+}
 
 
 
@@ -317,11 +295,6 @@ ol {
     border: 1px solid #dfdfe0;
 }
 
-.menu_left {
-    width: 210px;
-    float: left;
-    border: 1px solid #dfdfe0;
-}
 
 .menu_left .menu_box_ {
     background-color: #f7f7f7;
@@ -331,12 +304,6 @@ ol {
 .menu_left .menu_box_>div {
     padding: 9px 0px 9px 0px;
     margin: 0 13px;
-}
-
-.menu_left .menu_box {
-    padding: 18px 0px 19px 0px;
-    margin: 0 13px;
-    border-bottom: 1px solid #eaeaea;
 }
 
 .menu_left .menu_box h3 {
@@ -352,8 +319,53 @@ ol {
     font-size: 12px;
     margin-top: 5px;
 }
+
 .menu_left .menu_box {
     padding: 18px 0px 19px 0px;
     margin: 0 13px;
     border-bottom: 1px solid #eaeaea;
+}
+
+.menu_left .menu_box ul.menu_contnet{
+	display: inline-block;
+}
+
+.r-gift {
+    width: 19px;
+    height: 19px;
+    vertical-align: text-bottom;
+    margin-left: 10px;
+}
+.menu_right {
+    float: left;
+    margin-left: 10px;
+    font-size: 12px;
+    width: 976px;
+    margin-bottom: 10px;
+}
+.selfPart2 {
+    overflow: hidden;
+    height: 197px;
+}
+.selfPart3 {
+    overflow: hidden;
+    height: 350px;
+}
+.selfMsg {
+    overflow: hidden;
+    padding: 22px 33px;
+    border: 1px solid #e6e6e6;
+    margin: 20px 0;1
+}
+.selfMsg_fl {
+    /* border-right: 1px solid #e6e6e6; */
+    width: 44%;
+    height: 100px;
+}
+.selfMsg_fr {
+    background-color: #fafafa;
+    width: 55%;
+    /* height: 95px; */
+    padding-top: 5px;
+    border-left: 1px solid #e6e6e6;
 }
