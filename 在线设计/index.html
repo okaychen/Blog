@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>三维家在线设计</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="canvasWrapper">
+    <canvas id="canvas" width="2400" height="1800"><h1 class="textCenter">对不起你的浏览器不支持canvas</h1></canvas>
+</div>
+<!--header-->
+<header class="header">
+    <!--logo-->
+    <div class="header-logo">
+        <img src="img/logo.png" alt=""/>
+        <span>家装设计平台</span>
+    </div>
+    <!--nav-->
+    <div class="header-list-wrapper">
+        <ul class="header-list">
+            <li><a href=""><i class="fa fa-cloud-download" aria-hidden="true"></i>素材库</a></li>
+            <li><a href=""><i class="fa fa-file-o" aria-hidden="true"></i>新建</a></li>
+            <li class="PosRelative">
+                <a href="">
+                    <i class="fa fa-floppy-o" aria-hidden="true"></i>保存
+                    <i class="lowerTri fa fa-caret-down" aria-hidden="true"></i>
+                </a>
+                <ul class="listDown_save">
+                    <li>保存方案</li>
+                    <li>另存方案</li>
+                </ul>
+            </li>
+            <li><a href=""><i class="fa fa-cog" aria-hidden="true"></i>设置</a></li>
+            <li><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i>结算</a></li>
+            <li><a href=""><i class="fa fa-magic" aria-hidden="true"></i>测距</a></li>
+            <li class="PosRelative">
+                <a href=""><i class="fa fa-th-large" aria-hidden="true"></i>显示</a>
+                <ul class="listDown_show">
+                    <li class="textCenter borderBottom">显示隐藏管理</li>
+                    <li><input type="checkbox" value="" name="">家具/饰品</li>
+                    <li><input type="checkbox" value="" name="">吊灯层</li>
+                    <li><input type="checkbox" value="" name="">门窗</li>
+                    <li><input type="checkbox" value="" name="" checked>顶/地角线</li>
+                </ul>
+            </li>
+            <li class="PosRelative">
+                <a href=""><i class="fa fa-picture-o" aria-hidden="true"></i>户型图</a>
+                <ul class="listDown_apart">
+                    <li><input type="checkbox" name="">显示户型图<input type="checkbox" name="">锁定户型图</li>
+                    <li class="borderBottom"><label>墙体透明度</label><input type="range"></li>
+                    <li>下载平面图</li>
+                    <li>编辑VR全景</li>
+                    <li>下载毛坯图</li>
+                    <li>本地上传CAD图</li>
+                    <li>本地上传户型图</li>
+                    <li>查找楼盘户型图</li>
+                </ul>
+            </li>
+            <li><a href=""><i class="fa fa-th-large" aria-hidden="true"></i>全屏</a></li>
+            <li class="PosRelative">
+                <a href=""><i class="fa fa-question-circle" aria-hidden="true"></i>帮助</a>
+                <ul class="listDown_help">
+                    <li>学习帮助</li>
+                    <li>快捷键</li>
+                    <li>消息通知</li>
+                    <li>关于平台</li>
+                </ul>
+            </li>
+            <li class="PosRelative">
+                <a href=""><i class="fa fa-user" aria-hidden="true"></i>用户</a>
+                <ul class="listDown_user">
+                    <li><i class="fa fa-user-o" aria-hidden="true"></i>18839527768</li>
+                    <li><i class="fa fa-money" aria-hidden="true"></i>0维币</li>
+                    <li><i class="fa fa-file-text-o" aria-hidden="true"></i>我的方案</li>
+                    <li><i class="fa fa-shopping-basket" aria-hidden="true"></i>商家中心</li>
+                    <li><i class="fa fa-server" aria-hidden="true"></i>我的服务</li>
+                    <li><i class="fa fa-jpy" aria-hidden="true"></i>充值维币</li>
+                    <li><i class="fa fa-sign-out" aria-hidden="true"></i>退出登录</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--end nav-->
+</header>
+<!--little map-->
+<div class="mapWrapper">
+    <div>
+        <ul class="map-list">
+            <li class="map-active"><i class="fa fa-clone" aria-hidden="true"></i>2D</li>
+            <li><i class="fa fa-cubes" aria-hidden="true"></i>3D</li>
+            <li><i class="fa fa-user" aria-hidden="true"></i>漫游</li>
+        </ul>
+        <!--导航图-->
+        <div class="mapNavWrapper" id="mapNavWrapper">
+            <header class="mapNav-header"><i class="fa fa-backward" aria-hidden="true"></i></header>
+            <div class="mapNav-main">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <p>导航图</p>
+            </div><!--这一层使用main标签在IE中有bug-->
+        </div>
+        <!--导航图放大后-->
+        <div class="createMapNav">
+            <header class="mapNav-header">
+                <i class="mapNav-header-i fa fa-forward" aria-hidden="true"></i>
+                <span class="mapNav-header-title">导航图</span>
+            </header>
+            <div class="mapNav-main"></div>
+        </div>
+        <!--效果图-->
+        <div class="mapResultWrapper">
+            <header class="mapResult-header">
+                <i class=" fa fa-backward" aria-hidden="true"></i>
+            </header>
+            <div class="mapResult-main">
+                <i class="fa fa-camera" aria-hidden="true"></i>
+                <p>效果图</p>
+            </div>
+        </div>
+        <!--效果图放大后-->
+        <div class="createMapResult">
+            <header class="mapResult-header">
+                <i class="mapResult-header-i fa fa-forward" aria-hidden="true"></i>
+                <span class="mapResult-header-title">效果图</span>
+            </header>
+            <div class="mapResult-main"></div>
+        </div>
+    </div>
+</div>
+<!--end little map-->
+<!--leftBar-->
+<div class="leftBarWrapper">
+    <header class="leftBar-header">
+        <ul>
+            <li class="leftBar-item"><i class="fa fa-cube" aria-hidden="true"></i>样板间</li>
+            <li class="leftBar-item leftBar-active"><i class="fa fa-cloud" aria-hidden="true"></i>云素材</li>
+            <li class="leftBar-item"><i class="fa fa-bookmark-o" aria-hidden="true"></i>品牌馆</li>
+            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+        </ul>
+    </header>
+    <!--样板间-->
+    <div class="leftBar-tab leftBar-demo">
+        <nav class="leftBar-demo-nav">
+            <ul class="leftBar-listDown whiteColor">
+                <li class="leftBar-PosRelative">
+                    空间<i class="lowerTri fa fa-caret-down" aria-hidden="true"></i>
+                    <ul class="leftBar-demo-s1">
+                        <li>全部</li>
+                        <li>套餐厅</li>
+                        <li>主卧</li>
+                        <li>客厅</li>
+                        <li>卫生间</li>
+                        <li>图房</li>
+                        <li>儿童房</li>
+                        <li>书房</li>
+                        <li>餐厅</li>
+                        <li>储物室</li>
+                        <li>入室花园</li>
+                        <li>阳台</li>
+                        <li>衣帽间</li>
+                        <li>玄关</li>
+                        <li>男孩房</li>
+                    </ul>
+                </li>
+                <li class="leftBar-PosRelative">
+                    面积<i class="lowerTri fa fa-caret-down" aria-hidden="true"></i>
+                    <ul class="leftBar-demo-s2">
+                        <li>全部</li>
+                        <li>10㎡以下</li>
+                        <li>10-20㎡</li>
+                        <li>21-30㎡</li>
+                        <li>31-40㎡</li>
+                        <li>41-50㎡</li>
+                        <li>50㎡以上</li>
+                    </ul>
+                </li>
+                <li><i class="fa fa-bars" aria-hidden="true"></i>更多</li>
+            </ul>
+        </nav>
+        <main class="leftBar-demo-main">
+            <ul>
+                <li>
+                    <div class="item-cover">
+                        <button class="btn btn-primary btn-primary-hover">打开</button>
+                    </div>
+                    <img src="img/baidu.png" alt=""/>
+                </li>
+                <li>
+                    <div class="item-cover">
+                        <button class="btn btn-primary btn-primary-hover">打开</button>
+                    </div>
+                    <img src="img/Firefox.png" alt=""/>
+                </li>
+                <li>
+                    <div class="item-cover">
+                        <button class="btn btn-primary btn-primary-hover">打开</button>
+                    </div>
+                    <img src="img/baidu.png" alt=""/>
+                </li>
+                <li>
+                    <div class="item-cover">
+                        <button class="btn btn-primary btn-primary-hover">打开</button>
+                    </div>
+                    <img src="img/baidu.png" alt=""/>
+                </li>
+                <li>
+                    <div class="item-cover">
+                        <button class="btn btn-primary btn-primary-hover">打开</button>
+                    </div>
+                    <img src="img/baidu.png" alt=""/>
+                </li>
+                <li>
+                    <div class="item-cover">
+                        <button class="btn btn-primary btn-primary-hover">打开</button>
+                    </div>
+                    <img src="img/baidu.png" alt=""/>
+                </li>
+                <li>
+                    <div class="item-cover">
+                        <button class="btn btn-primary btn-primary-hover">打开</button>
+                    </div>
+                    <img src="img/baidu.png" alt=""/>
+                </li>
+            </ul>
+            <!--分页-->
+            <div class="leftBar-pageCut-wrapper">
+                <ul>
+                    <li class="pageCut-item-active">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>&rsaquo;</li>
+                    <li><input type="text" name=""></li>
+                    <li>页</li>
+                    <li>Go</li>
+                </ul>
+            </div>
+            <!--end 分页-->
+        </main>
+    </div>
+    <!--云素材-->
+    <div class="leftBar-tab leftBar-cloud">
+        <nav class="leftBar-cloud-nav">
+            <ul class="leftBar-listDown whiteColor">
+                <li class="leftBar-PosRelative">全部<i class="lowerTri fa fa-caret-down" aria-hidden="true"></i>
+                    <ul class="leftBar-cloud-m1">
+                        <li>墙纸</li>
+                        <li>涂料</li>
+                        <li>背景墙</li>
+                        <li>吊灯</li>
+                        <li>构件</li>
+                        <li>石材</li>
+                        <li>装饰贴图</li>
+                        <li>其他</li>
+                    </ul>
+                </li>
+                <li class="leftBar-PosRelative">全部<i class="lowerTri fa fa-caret-down" aria-hidden="true"></i>
+                    <ul class="leftBar-cloud-m2">
+                        <li>地砖</li>
+                        <li>墙砖</li>
+                        <li>木纹庄</li>
+                        <li>仿古砖</li>
+                        <li>装饰砖</li>
+                        <li>文化石</li>
+                        <li>马赛克</li>
+                        <li>玻化砖</li>
+                        <li>花片</li>
+                        <li>水泥墙</li>
+                    </ul>
+                </li>
+                <li><i class="fa fa-bars" aria-hidden="true"></i>筛选</li>
+            </ul>
+        </nav>
+        <!--云素材左侧切换-->
+        <aside class="leftBar-cloud-aside">
+            <ul>
+                <li class="cloud-aside-item"><i class="fa fa-file-o" aria-hidden="true"></i>画墙</li>
+                <li class="cloud-aside-item leftBar-cloud-relative aside-tab-active">
+                    <i class="fa fa-table" aria-hidden="true"></i>门窗
+                    <div class="cloud-showWrapper">
+                        <ul>
+                            <li><i class="i-active">窗</i></li>
+                            <li><i>门</i></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cloud-aside-item leftBar-cloud-relative">
+                    <i class="fa fa-bitbucket-square" aria-hidden="true"></i>硬装
+                    <div class="cloud-showWrapper">
+                        <ul>
+                            <li><i class="i-active">瓷砖</i></li>
+                            <li><i>木板地</i></li>
+                            <li><i>墙纸</i></li>
+                            <li><i>涂料</i></li>
+                            <li><i>背景墙</i></li>
+                            <li><i>构件</i></li>
+                            <li><i>石材</i></li>
+                            <li><i>装饰贴图</i></li>
+                            <li><i>其他</i></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cloud-aside-item leftBar-cloud-relative">
+                    <i class="fa fa-wheelchair-alt" aria-hidden="true"></i>家具
+                    <div class="cloud-showWrapper">
+                        <ul>
+                            <li><i class="i-active">套餐厅</i></li>
+                            <li><i>卧室</i></li>
+                            <li><i>书房</i></li>
+                            <li><i>儿童房</i></li>
+                            <li><i>厨房</i></li>
+                            <li><i>卫浴</i></li>
+                            <li><i>办公空间</i></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cloud-aside-item leftBar-cloud-relative">
+                    <i class="fa fa-shower" aria-hidden="true"></i>装饰
+                    <div class="cloud-showWrapper">
+                        <ul>
+                            <li><i class="i-active">家居饰品</i></li>
+                            <li><i>布艺软饰</i></li>
+                            <li><i>鲜花园艺</i></li>
+                            <li><i>厨卫用品</i></li>
+                            <li><i>器材设备</i></li>
+                            <li><i>灯饰</i></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cloud-aside-item leftBar-cloud-relative">
+                    <i class="fa fa-camera" aria-hidden="true"></i>电器
+                    <div class="cloud-showWrapper">
+                        <ul>
+                            <li><i class="i-active">生活家电</i></li>
+                            <li><i>厨房电器</i></li>
+                            <li><i>影音数码</i></li>
+                            <li><i>开关插座</i></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="addBorder"></ul>
+        </aside>
+        <!--end 云素材main-->
+        <main class="leftBar-cloud-main">
+            <!--tab1-->
+            <div class="leftBar-aside-tab leftBar-cloud-m1Wrapper">
+
+
+            </div>
+            <!--tab2-->
+            <div class="leftBar-aside-tab leftBar-cloud-m2Wrapper">
+                <!--nav-->
+                <div class="leftBar-cloud-mNav">
+                    <ul>
+                        <li><i class="i-active">矩形窗</i></li>
+                        <li><i>异型窗</i></li>
+                        <li><i>飘窗</i></li>
+                        <li><i>落地窗</i></li>
+                        <li><i>转角飘窗</i></li>
+                        <li><i>阳台</i></li>
+                        <li><i>外景</i></li>
+                    </ul>
+                </div>
+                <!--main-->
+                <main class="leftBar-cloud-mMain">
+                    <ul>
+                        <li>
+                            <div class="item-cover"></div>
+                            <img src="img/material.png" alt=""/>
+                        </li>
+                        <li>
+                            <div class="item-cover"></div>
+                            <img src="img/material.png" alt=""/>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="item-cover"></div>
+                            <img src="img/material.png" alt=""/>
+                        </li>
+                        <li>
+                            <div class="item-cover"></div>
+                            <img src="img/material.png" alt=""/>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="item-cover"></div>
+                            <img src="img/material.png" alt=""/>
+                        </li>
+                        <li>
+                            <div class="item-cover"></div>
+                            <img src="img/material.png" alt=""/>
+                        </li>
+                    </ul>
+                </main>
+                <!--分页-->
+                <div class="leftBar-pageCut-wrapper">
+                    <ul>
+                        <li class="pageCut-item-active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>&rsaquo;</li>
+                        <li><input type="text" name=""></li>
+                        <li>页</li>
+                        <li>Go</li>
+                    </ul>
+                </div>
+                <!--end 分页-->
+            </div>
+            <!--tab3-->
+            <div class="leftBar-aside-tab leftBar-cloud-m3Wrapper">
+
+                <!--nav-->
+                <div class="leftBar-cloud-mNav">
+                    <ul>
+                        <li><i class="i-active">矩形窗</i></li>
+                        <li><i>异型窗</i></li>
+                        <li><i>飘窗</i></li>
+                        <li><i>落地窗</i></li>
+                        <li><i>转角飘窗</i></li>
+                        <li><i>阳台</i></li>
+                        <li><i>外景</i></li>
+                    </ul>
+                </div>
+                <!--main-->
+                <main class="leftBar-cloud-mMain">
+                    <ul>
+                        <li>
+                            <div class="item-cover"></div>
+                            <img src="img/material.png" alt=""/>
+                        </li>
+                        <li>
+                            <div class="item-cover"></div>
+                            <img src="img/material.png" alt=""/>
+                        </li>
+                    </ul>
+                </main>
+                <!--分页-->
+                <div class="leftBar-pageCut-wrapper">
+                    <ul>
+                        <li class="pageCut-item-active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>&rsaquo;</li>
+                        <li><input type="text" name=""></li>
+                        <li>页</li>
+                        <li>Go</li>
+                    </ul>
+                </div>
+                <!--end 分页-->
+            </div>
+            <!--tab4-->
+            <div class="leftBar-aside-tab leftBar-cloud-m4Wrapper">
+                <!--nav-->
+                <div class="leftBar-cloud-mNav">
+                    <ul>
+                        <li><i class="i-active">矩形窗</i></li>
+                        <li><i>异型窗</i></li>
+                        <li><i>飘窗</i></li>
+                        <li><i>落地窗</i></li>
+                        <li><i>转角飘窗</i></li>
+                        <li><i>阳台</i></li>
+                        <li><i>外景</i></li>
+                    </ul>
+                </div>
+                <!--main-->
+                <main class="leftBar-cloud-mMain">
+                    <ul>
+                        <li>
+                            <div class="item-cover"></div>
+                            <img src="img/material.png" alt=""/>
+                        </li>
+                        <li>
+                            <div class="item-cover"></div>
+                            <img src="img/material.png" alt=""/>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="item-cover"></div>
+                            <img src="img/material.png" alt=""/>
+                        </li>
+                        <li>
+                            <div class="item-cover"></div>
+                            <img src="img/material.png" alt=""/>
+                        </li>
+                    </ul>
+                </main>
+                <!--分页-->
+                <div class="leftBar-pageCut-wrapper">
+                    <ul>
+                        <li class="pageCut-item-active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>&rsaquo;</li>
+                        <li><input type="text" name=""></li>
+                        <li>页</li>
+                        <li>Go</li>
+                    </ul>
+                </div>
+                <!--end 分页-->
+            </div>
+            <!--tab5-->
+            <div class="leftBar-aside-tab leftBar-cloud-m5Wrapper">
+                <!--nav-->
+                <div class="leftBar-cloud-mNav">
+                    <ul>
+                        <li><i class="i-active">矩形窗</i></li>
+                        <li><i>异型窗</i></li>
+                        <li><i>飘窗</i></li>
+                        <li><i>落地窗</i></li>
+                        <li><i>转角飘窗</i></li>
+                        <li><i>阳台</i></li>
+                        <li><i>外景</i></li>
+                    </ul>
+                </div>
+                <!--main-->
+                <main class="leftBar-cloud-mMain">
+                    <ul>
+                        <li>
+                            <div class="item-cover"></div>
+                            <img src="img/material.png" alt=""/>
+                        </li>
+                        <li>
+                            <div class="item-cover"></div>
+                            <img src="img/material.png" alt=""/>
+                        </li>
+                    </ul>
+                </main>
+                <!--分页-->
+                <div class="leftBar-pageCut-wrapper">
+                    <ul>
+                        <li class="pageCut-item-active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>&rsaquo;</li>
+                        <li><input type="text" name=""></li>
+                        <li>页</li>
+                        <li>Go</li>
+                    </ul>
+                </div>
+                <!--end 分页-->
+            </div>
+            <!--tab6-->
+            <div class="leftBar-aside-tab leftBar-cloud-m6Wrapper">
+                <!--nav-->
+                <div class="leftBar-cloud-mNav">
+                    <ul>
+                        <li><i class="i-active">矩形窗</i></li>
+                        <li><i>异型窗</i></li>
+                        <li><i>飘窗</i></li>
+                        <li><i>落地窗</i></li>
+                        <li><i>转角飘窗</i></li>
+                        <li><i>阳台</i></li>
+                        <li><i>外景</i></li>
+                    </ul>
+                </div>
+                <!--main-->
+                <main class="leftBar-cloud-mMain">
+                    <ul>
+                        <li>
+                            <div class="item-cover"></div>
+                            <img src="img/material.png" alt=""/>
+                        </li>
+                        <li>
+                            <div class="item-cover"></div>
+                            <img src="img/material.png" alt=""/>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="item-cover"></div>
+                            <img src="img/material.png" alt=""/>
+                        </li>
+                        <li>
+                            <div class="item-cover"></div>
+                            <img src="img/material.png" alt=""/>
+                        </li>
+                    </ul>
+                </main>
+                <!--分页-->
+                <div class="leftBar-pageCut-wrapper">
+                    <ul>
+                        <li class="pageCut-item-active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>&rsaquo;</li>
+                        <li><input type="text" name=""></li>
+                        <li>页</li>
+                        <li>Go</li>
+                    </ul>
+                </div>
+                <!--end 分页-->
+            </div>
+        </main>
+    </div>
+    <!--品牌馆-->
+    <div class="leftBar-tab leftBar-brand">
+        <!--nav-->
+        <nav class="leftBar-brand-nav">
+            <ul class="leftBar-listDown whiteColor">
+                <li><i class="fa fa-bars" aria-hidden="true"></i>筛选</li>
+            </ul>
+        </nav>
+        <!--end nav-->
+        <main class="leftBar-brand-main">
+            <ul>
+                <li>
+                    <div class="item-cover"></div>
+                    <img src="img/baidu.png" alt=""/>
+                </li>
+                <li>
+                    <div class="item-cover"></div>
+                    <img src="img/Firefox.png" alt=""/>
+                </li>
+                <li>
+                    <div class="item-cover"></div>
+                    <img src="img/Firefox.png" alt=""/>
+                </li>
+                <li>
+                    <div class="item-cover"></div>
+                    <img src="img/baidu.png" alt=""/>
+                </li>
+                <li>
+                    <div class="item-cover"></div>
+                    <img src="img/Firefox.png" alt=""/>
+                </li>
+                <li>
+                    <div class="item-cover"></div>
+                    <img src="img/baidu.png" alt=""/>
+                </li>
+                <li>
+                    <div class="item-cover"></div>
+                    <img src="img/Firefox.png" alt=""/>
+                </li>
+            </ul>
+            <!--分页-->
+            <div class="leftBar-pageCut-wrapper">
+                <ul>
+                    <li class="pageCut-item-active">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>&rsaquo;</li>
+                    <li><input type="text" name=""></li>
+                    <li>页</li>
+                    <li>Go</li>
+                </ul>
+            </div>
+            <!--end 分页-->
+        </main>
+    </div>
+</div>
+<!--end leftBar-->
+<script src="js/main.js" type="text/javascript"></script>
+<script src="js/canvas.js" type="text/javascript"></script>
+</body>
+</html>

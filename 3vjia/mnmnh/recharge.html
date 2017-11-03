@@ -1,0 +1,554 @@
+﻿
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>
+	充值中心
+</title>
+    <script src="../js/jquery-1.6.2.min.js"></script>
+    <style type="text/css">
+        body {
+            font-family: "微软雅黑";
+            color: #3F3F3F;
+        }
+
+        * {
+            font-family: "微软雅黑";
+            margin: 0px;
+            padding: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .topright a {
+            float: right;
+            font-size: 12px;
+            padding: 3px 15px;
+            margin: 3px;
+        }
+
+        .botombannner a {
+            font-size: 12px;
+            padding: 3px 15px;
+            margin: 3px;
+            border-left: solid 1px #ccc;
+        }
+
+            .botombannner a:first-child {
+                border-left: none;
+            }
+
+        #midLogo {
+            background: -moz-linear-gradient(top,#ECF0F3,#fff); /*火狐*/
+            background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#ECF0F3), to(#fff)); /*谷歌*/
+        }
+
+        .botombannner p {
+            font-size: 12px;
+            padding: 3px 15px;
+            margin: 3px;
+            line-height: 30px;
+        }
+
+        .vbintrodution {
+            color: #999;
+            font-size: 12px;
+            margin-left: 13px;
+        }
+
+            .vbintrodution li {
+                line-height: 25px;
+                margin: 5px;
+            }
+
+        .leftDiv {
+            width: 220px;
+            padding: 20px 5px 15px 0px;
+            line-height: 35px;
+            border-bottom: dashed 1px #CCCCCC;
+            margin: auto;
+            font-size: 15px;
+        }
+
+        .inputTable {
+            font-size: 14px;
+            color: #333;
+        }
+
+            .inputTable tr td {
+                padding: 10px 0px;
+                line-height: 1.0;
+            }
+
+                .inputTable tr td:first-child {
+                    text-align: right;
+                    font-size: 15px;
+                    width: 150px;
+                }
+
+                .inputTable tr td:last-child {
+                    text-align: left;
+                }
+
+        .aPayType {
+            margin: 0px 20px 0px 00px;
+            /* border:solid 1px #fff;*/
+            display: inline-block;
+            padding: 10px 20px 1px 10px;
+            border-radius: 0px;
+            cursor: pointer;
+            border: solid 1px #ccc;
+        }
+
+
+
+        .aPaySeled {
+            margin: 0px 20px 0px 00px;
+            /* border:solid 1px #fff;*/
+            display: inline-block;
+            padding: 9px 19px 0px 9px;
+            border-radius: 0px;
+            cursor: pointer;
+            border: solid 2px #3A76D3 !important;
+            background-image: url(../images/勾选.png);
+            background-repeat: no-repeat;
+            background-position: 100% 100%;
+            background-size: 20px;
+            border: solid 2px #3A76D3 !important;
+        }
+
+        #ChargeMoney {
+            padding: 10px;
+            border: solid 1px #ccc;
+        }
+
+        .btnHU {
+          
+            padding: 12px 30px 10px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #FF6E41;
+            border: none;
+            line-height: 20px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .btnHUAlert {
+            margin-right: 50px;
+            padding: 12px 30px 10px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #F8F7F6;
+            border: solid 1px #C0C0C0;
+            line-height: 20px;
+            color: #333;
+            cursor: pointer;
+        }
+    </style>
+
+    <style id="弹出层样式" type="text/css">
+        html, body {
+            height: 100%;
+            margin: 0px;
+            font-size: 12px;
+        }
+
+        .mydiv {
+            padding: 20px;
+            border-radius: 6px;
+            background-color: #fff;
+            border: 1px solid #E9D4C1;
+            text-align: center;
+            line-height: 40px;
+            font-size: 12px;
+            font-weight: bold;
+            z-index: 999;
+            left: 50%;
+            top: 30%;
+            margin-left: -200px !important;
+            margin-top: -60px !important;
+            margin-top: 0px;
+            position: fixed !important;
+        }
+
+        .shade {
+            position: absolute;
+            /*top:77px;*/
+            top: 0px;
+            background-color: black;
+            opacity: 0.3;
+            filter: alpha(opacity=80);
+            height: 100%;
+            width: 100%;
+            z-index: 5555;
+        }
+    </style>
+</head>
+<body>
+    <form name="form1" method="post" action="recharge.aspx" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="PoW+Nn3CkxSZ9MQprM0G0oKoHh96E3TnKNyZW2MVqoFs3636ORe+z2aHVb3GD1NLz+yHiA==" />
+
+        <div id="弹出层DIV" style="height: 0px;">
+
+            <div id="shade" class="shade" style="display: none"></div>
+            <div id="popDiv" class="mydiv" style="text-align: center; min-width: 300px; z-index: 100000; display: none">
+                <div style="font-weight: bold; font-size: 17px; color: #333; text-align: left;">
+                    <img src="../picture/paybanner.png" style="vertical-align: sub; margin-right: 10px;" />支付结果   <span style="float: right; cursor: pointer;" onclick="closeDiv()">
+                        <img src="../picture/closebtn.png" /></span></div>
+
+                <div style="border-top: solid 1px #E9E9E9; font-size: 14px; height: 100px; line-height: 100px; text-align: center; color: #6C6D6D">请在新页面中完成支付,付款完成后再关闭此窗口</div>
+                <div style="text-align: center;">
+                </div>
+
+                <div style="margin: 10px; height: 100px;">
+                    <input type="button" onclick="checkIsPay()" value="支付成功" class="btnHUAlert" />
+                    <input style="color: #FD7953; margin-right: 0px;" type="button" onclick="closeDiv()" value="未成功再来一次" class="btnHUAlert" />
+                </div>
+                <div id="" style="clear: both;"></div>
+
+
+
+
+            </div>
+            `
+        </div>
+        <div>
+
+            <div id="topbanner" style="background-color: #F5F5F5; height: 30px; width: 100%;">
+                <div style="width: 1200px; margin: auto;">
+
+                    <div class="topright">
+                        <a href="http://www.3vjia.com/helper/index" target="_blank">帮助中心</a>
+                        <a style="border-right: solid 1px #ccc;" href="http://sj.3vjia.com/Admin/MyService/index" target="_blank">我的服务</a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="midLogo" style="height: 90px; line-height: 90px; background: url(../images/rechargebanner.jpg) no-repeat; background-size: 100% 90px;">
+                <div style="width: 1300px; margin: auto;">
+                    <a href="http://www.3vjia.com" target="_blank">
+                        <img src="../picture/logo.png" style="vertical-align: middle" /></a>
+                    <span style="padding: 0px 15px; margin-left: 15px; border-left: solid 1px #E5E5E5; font-size: 24px;">充值中心</span>
+                    <p style="float: right; margin-right: 50px; vertical-align: bottom; font-size: 20px; font-size: 17px;">
+
+                        <a style="border-bottom: solid 3px #1890FF; margin-right: 60px; padding: 0px 4px">维币充值</a>
+                        <a target="_blank" style="text-decoration: none; color: #3f3f3f" href="http://fw.3vjia.com/">购买服务</a>
+                    </p>
+                </div>
+            </div>
+
+            <div id="content" style="width: 1200px; margin: auto;">
+                <div style="float: left; width: 300px; height: 640px; background-color: #F5F5F5;">
+                    <div class="leftDiv">
+                        <span>充值帐号: </span><br />
+                        <span>维币余额: <span style="color: darkorange" id="currentMoney">100维币</span></span>
+                    </div>
+                    <div class="leftDiv">
+                        <span>单价: ￥1.00</span><br />
+                        <span>维币介绍</span>
+                        <ul class="vbintrodution">
+                            <li>维币可以用来渲染不同分辨率的方案效果图</li>
+                            <li>维币可以用来渲染720°全景效果图</li>
+                            <li>只有主帐号(店长)才能分配维币给子账号(设计师)</li>
+                            <li>维币充值暂不支持退款/提现</li>
+                            <li>维币暂不支持购买橱柜，衣柜，铺砖，吊顶等定制模块或套餐</li>
+                        </ul>
+
+
+                    </div>
+                    <div class="leftDiv" style="border-bottom: none;">
+                        <span>客服帮助</span><br />
+                        <div style="margin: 20px; text-align: center;">
+                            <a target="_blank" id="BizQQWPA90" style="border: solid 1px #8EBEE2; padding: 8px 55px; font-size: 16px; background-color: #ECF6FF; cursor: pointer; text-decoration: none">在线咨询</a><br />
+                            <span style="color: #A0A0A0; font-size: 15px;">客服热线: 400-809-0630</span>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div style="float: left; width: 809px; height: 599px; border: solid 1px #dcdcdc; border-top: none; border-left: none; padding: 20px 45px;">
+                    <div style="background: url(../images/tishi.png) no-repeat; width: 620px; font-size: 14px; background-color: #ECF6FF; border: solid 1px #E1F1FF; text-align: center; padding: 10px 15px; color: #A4A8AB; margin: auto; margin-top: 30px;">
+                        尊敬的三维家客户,现在单次充值,每满<span style="color: orangered">1000维币</span>可获赠1副VR眼镜,上不封顶~
+
+                    </div>
+
+                    <div>
+                        <table class="inputTable" border="0" cellspacing="10" cellpadding="0">
+                            <tr>
+                                <td align="left" style="line-height: 40px; text-align: right; vertical-align: super;"><font color="red">*</font>充值数量：</td>
+                                <td align="left">
+
+                                    <input maxlength="6" type="text" value="20" id="ChargeMoney" onkeyup="CHECK_ISNUM(this)" />
+                                    <span style="font-size: 14px; font-weight: normal">维币</span>
+                                    <br />
+                                    <p style="font-weight: normal; color: #666; padding-top: 10px;">
+                                        兑换比例：(1元=1维币  )
+                                    </p>
+                                </td>
+
+                            </tr>
+                            <tr id="testTr" style="display: none;">
+
+                                <td align="left">赠送VR眼镜：</td>
+                                <td align="left">
+                                    <div style="height: 40px; padding: 0px 10px; line-height: 40px; text-align: left;">
+                                        <span id="vrNum" style="color: #FE6F40;">1</span> 副  &nbsp;&nbsp;
+                                        <span>【VR眼镜邮寄费用到付】</span>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td align="left">应付金额：</td>
+                                <td align="left">￥<span id="money" class="moneyPay" style="color: #FE6F40; font-size: 19px;">20</span><span style="font-size: 12px;">元</span></td>
+
+                            </tr>
+                            <tr>
+                                <td align="left">支付方式：</td>
+                                <td align="left">
+                                    <div id="divPaySel" style="font-size: 17px;">
+                                        <span class="aPayType aPaySeled" value="weixin">
+                                            <img src="../picture/weixinzhifu.png" />
+                                        </span>
+                                        <span class="aPayType" value="zhifubao">
+                                            <img src="../picture/zhifubao.png" />
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div style="color: #999; font-size: 13px; border-top: dashed 1px #EDEDED; padding-top: 15px; margin-top: 20px;">
+                        <input id="IsAgree" style="vertical-align: middle; margin-left: 100px;" type="checkbox" checked="checked" />
+                        我已阅读并同意<a style="color: #999; text-decoration: none;" href="http://www.3vjia.com/PMC/Articles/recharge" target="_blank">《三维家平台充值/支付服务条款》</a>
+                        <p style="float: right; text-align:right; line-height:50px;  margin-right: 50px;">
+                          <span style="margin-right:20px;">  应付总额:<span style="color:#FF6632;font-size:24px;font-weight:bold;">
+                              ￥<span id="totalPay" class="moneyPay" >20</span>.00</span></span>
+                            <br />
+                            <span style="color: #FF6632">注:充值后不可退款或返现</span>
+                            <input type="button" id="btnSave" value="立即支付" class="btnHU" />
+
+                        </p>
+
+                    </div>
+
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+
+            <div style="margin-top: 150px; border-bottom: solid 1px #E3E3E3; width: 100%;">
+            </div>
+            <di v class="botombannner">
+                <div style="text-align: center; margin-top: 10px;">
+                    <a href="http://www.3vjia.com/About/Index" target="_blank">关于三维家</a>
+                    <a href="http://sj.3vjia.com" target="_blank">商铺管理</a>
+                    <a href="http://fw.3vjia.com" target="_blank">产品服务</a>
+                    <a href="http://www.3vjia.com/helper/index" target="_blank">帮助中心</a>
+
+                </div>
+
+                <div style="margin-top: 35px; text-align: center;">
+                    <p>@2012～2017 All rights reserved</p>
+                    <p>
+                        广东三维家信息科技有限公司 版权所有粤ICP备14070053号-2
+                    </p>
+
+                </div>
+            </di>
+        </div>
+    
+<script>alert('登录超时，请重新登录！');document.location.href='http://www.3vjia.com';</script></form>
+</body>
+</html>
+<meta property="qc:admins" content="21020713756362116375636" />
+<script charset="utf-8" src="../js/wpa.js"></script>
+
+<script language="javascript" type="text/javascript">
+    var theOpenDiv = null;
+    function showDiv(divId) {
+
+        theOpenDiv = document.getElementById(divId);
+        $(theOpenDiv).fadeIn(500);
+
+        $("#shade").fadeIn(500);
+    }
+    function closeDiv() {
+        $(theOpenDiv).fadeOut(100);
+
+        theOpenDiv = null;
+        $("#shade").fadeOut(500);
+    }
+
+</script>
+<script type="text/javascript">
+
+    BizQQWPA.addCustom({ aty: '0', nameAccount: 4008090630, selector: 'BizQQWPA90' });
+
+    var orderId = "";
+    function CallBack(id) {
+        orderId = id;
+    }
+
+
+    function checkIsPay() {
+
+        $.post('/mnmnh/common/rechargehandler.ashx?method=checkIsPay', { gid: orderId }, function (data) {
+            if (data == 1) {
+                window.location.href = "http://www.3vjia.com/DesignArtifact/vrpay?RechargeId=" + orderId;
+            }
+            else {
+                window.location.href = "http://www.3vjia.com/DesignArtifact/VRPay?paystate=0&RechargeId=" + orderId;
+            }
+        });
+    }
+    //  http://www.3vjia.com/DesignArtifact/vrpay?RechargeId=
+
+
+    $("#divPaySel").delegate("span", "click", function () {
+        $("#divPaySel span").removeClass("aPaySeled");
+        $(this).addClass("aPaySeled");
+
+    });
+    function listenIsShowVr() {
+        var theCost = $("#money").html();
+
+        if (theCost * 1.0 > 999) {
+
+            var sendNum = Math.floor(theCost / 1000);
+
+            $("#vrNum").html(sendNum);
+            $("#testTr").show(300);
+        }
+        else {
+            $("#testTr").hide(300);
+        }
+    }
+
+
+    function changeTxtStatus() {
+        if ($("#CusMoney").attr("checked") == "checked") {
+            $('#ChargeMoney').removeAttr('disabled');
+            $('.moneyNum').attr('disabled', 'disabled');
+
+            if ($("#ChargeMoney").val() != "")
+            $('.moneyPay').html($("#ChargeMoney").val());
+        }
+        else {
+            $('#ChargeMoney').attr('disabled', 'disabled');
+            $('.moneyNum').removeAttr('disabled');
+            $('.moneyPay').html($(".moneyNum").val());
+            
+
+        }
+    }
+
+    function IsShaoMa() {
+        $("#btnSave").show();
+        var payType = $("input[name='PayType']:checked").val();
+        if (payType == "2") {
+            WeiXinPay();
+        }
+    }
+    $("input[name='PayType']").live("click", function () {
+        $("#btnSave").show();
+        var pType = $(this).val();
+        /* if (pType == "2") {
+             WeiXinPay();
+         } else {
+             $("#trhidImg").hide(100);
+         }*/
+    });
+    //动态获取用户当前余额
+    $.post('../view/CommonAll.ashx?method=getUserMoney', {}, function (data) {
+        $("#currentMoney").html(data + "维币");
+    });
+    function CHECK_ISNUM(o) {
+        if ($(""))
+            $(o).val($(o).val().replace(/\D+/g, ""));
+        if ($(o).val() == "" || $(o).val() == "0") {
+            $(o).val(1);
+        }
+        $(".moneyPay").html($(o).val());
+
+        listenIsShowVr();
+    }
+
+    $(".moneyNum").change(function () {
+        var theMoney = $(this).val();
+        //$("#ChargeMoney").val(theMoney);
+        $(".moneyPay").html(theMoney);
+        var payType = $("input[name='PayType']:checked").val();
+
+        listenIsShowVr();
+
+    });
+
+    //保存
+    $('#btnSave').live('click', function () {
+
+        if ($("#IsAgree").attr("checked") != "checked")
+        {
+            alert("请同意条款方可支付!"); return;
+        }
+
+     
+
+        var money = $.trim($("#money").html());
+
+
+        if (money == 0 || money > 10000 || money == null || money == undefined || money == "") {
+            alert("充值金额过大或过小,请填写1-10000之间的数字!"); return;
+        }
+        var payType = $("#divPaySel .aPaySeled").attr("value");
+        if (payType == "zhifubao") {
+            AliPay(money);
+        }
+        else if (payType == "weixin") {
+            WeiXinPay(money);
+        }
+        showDiv("popDiv");
+    });
+
+    //支付宝在线充值
+    function AliPay(money) {
+        var nw = window.open("about:blank", "");
+        nw.location = '/mnmnh/common/AliPay/default.aspx?money=' + money;
+    }
+
+    //网银在线充值
+    function BankOnlinePay(money, memberID) {
+        var nw = window.open("about:blank", "");
+        nw.location = '/mnmnh/common/Pay.aspx?money=' + money;
+    }
+
+    function WeiXinPay(money) {
+        // $("#btnSave").hide();
+
+        var nw = window.open("about:blank", "");
+        nw.location = '/mnmnh/common/weixinPay/NativePayPage.aspx?money=' + money;
+
+    }
+
+    window.onload = function () {
+        $(".module").remove();
+
+    }
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?ceffa521192900506e6d2d6ad36e6fd7";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>

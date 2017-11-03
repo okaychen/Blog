@@ -1,0 +1,89 @@
+﻿/** 新登录页面样式 start**/
+.footer{display: none;}
+body,html{overflow: hidden;}
+.loginWrap{position: relative;overflow: hidden; height: 819px;background: url(../images/loginbg.jpg) center no-repeat;}
+.loginForm{margin: 0 auto;position:relative;top:54%;margin-top:-229px; padding: 0 75px; width: 439px;height: 370px;background-color: #fff;border:1px solid #ecebeb;
+	/*box-shadow: 0px 0px 24px 0px rgb( 4, 0, 0 ); 
+	-webkit-box-shadow: 0px 0px 24px 0px rgb( 4, 0, 0 );
+	-moz-box-shadow: 0px 0px 24px 0px rgb( 4, 0, 0 );
+    -o-box-shadow: 0px 0px 24px 0px rgb( 4, 0, 0 );*/}
+.loginTit{font-size: 16px;color: #3fa0f3;line-height: 1.643;padding: 32px 0 22px;font-weight:bold;}
+.loginUser,.loginPwd{width: 437px;position:relative; height: 44px;background: #fff;margin-bottom: 15px;}
+.loginUser label,.loginPwd label{position:absolute;width:44px;height:44px;background: url(../images/iconnew.png) no-repeat;top:0;left:0;z-index:2;}
+.loginUser label:after,.loginPwd label:after{position:absolute;content:'';right:4px;top:10px;width:1px;height:26px;background-color:#ddd;}
+.loginUser label{background-position:-591px -183px;}
+.loginPwd label{background-position:-591px -230px;}
+.loginCode label {background:none;}
+.loginUser input,.loginPwd input{border:1px solid #ddd;outline: none;background-color:#fff; font-size: 14px;line-height: 16px;width: 378px;padding: 13px;padding-left:44px;color: #333;}
+.loginUser input:focus,.loginPwd input:focus{background-color: #f7fbfe;border-color: #c3d8ea;}
+.loginForget{padding: 0 3px;margin-bottom: 15px; font-size: 12px;line-height: 3.073;}
+.loginForget .freeRegister{color: #3fa0f3;}
+.loginForget .forgePwd{color: #666666;}
+.loginBtn input{width: 443px;height: 45px;font-size: 18px; border:0;outline: none;background-color: #37b5f9;border-radius: 2px;color: #fff;cursor: pointer;    font-family: '微软雅黑';}
+/** 新登录页面样式 end**/
+
+/*提示修改密码框的样式开始*/
+/*.alert {
+  position:relative;
+  height:150px;
+}
+.alert div {
+   margin:5px;
+}
+.alertTitle { 
+    font-size:16px;
+}
+.alertContent {
+    line-height:25px;
+    font-size:14px;
+    padding-top:5px;
+}
+.alert .btncls {
+   text-align:center;
+}
+.btncls .update {
+  display:block;
+  width:90px;
+  height:30px;
+  line-height:30px;
+  background-color:#1890ff;
+  color:#fff;
+  position:absolute;
+  bottom:0px;
+  left:105px;
+  cursor:pointer;
+}
+.btncls .notupdate {
+  position:absolute;
+  bottom:5px;
+  left:205px;
+  color:#1890ff;
+  cursor:pointer;
+}*/
+/*提示修改密码框的样式结束*/
+
+/*密码大写提示 Satar*/
+.capslock b {
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    width: 10px;
+    height: 14px;
+    overflow: hidden;
+    background: url(../images/pwd-icons-new.png) -104px -133px no-repeat;
+}
+.capslock {
+    position: absolute;
+    z-index: 4;
+    display: none;
+    /* width: 106px; */
+    top: 28px;
+    left: 50px;
+    padding-left: 26px;
+    height: 26px;
+    line-height: 28px;
+    overflow: hidden;
+    background: url(../images/capslock.png) no-repeat;
+}
+/*密码大写提示 End*/

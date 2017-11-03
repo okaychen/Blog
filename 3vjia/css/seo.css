@@ -1,0 +1,340 @@
+﻿/*reset*/
+.seo a:hover{
+    color:#468cd2!important;
+}
+.layout {
+	width:1200px;
+	margin:0 auto;
+}
+
+.introduction {
+	width:100%;
+	height:300px;
+	overflow:hidden;
+	margin-bottom:20px;
+}
+
+ .introduction {
+     background:url('../images/banner1.jpg') no-repeat;
+     background-size:cover;
+     background-position:center;
+	width: 100%;
+}
+
+.introduction > div {
+    position:relative;
+    height:300px;
+    width:1200px;
+    margin:0 auto;
+}
+
+.introduction > div > a {
+	position:absolute;
+	left:196px;
+	bottom:40px;
+    display:inline-block;
+	height:46px;
+    line-height:46px;
+    background-color: rgb(255,245,86);
+	color:#333;
+	text-decoration:none;
+	border-radius:3px;
+	width:155px;
+	text-align:center;
+    font-size:20px;
+}
+
+.layout > .main > .right {
+	width:300px;
+	float:right;
+}
+
+.layout > .main > .right > .ad1{
+	height:140px;
+    cursor:pointer;
+	margin-bottom:20px;
+    position:relative;
+}
+
+.layout > .main > .right > .ad1:hover > .mask {
+    transition: 1s all;
+    width:100%;
+    height:140px;
+    background-color:rgba(0,0,0,.3);
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+
+.layout > .main > .right > .ad1 > .mask > span {
+    position: absolute;
+    top: 53px;
+    letter-spacing: 2px;
+    right: 43px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.layout > .main > .right > .ad1:hover > .mask > span {
+    opacity:1;
+}
+
+.layout > .main > .right > .ad1 > img{
+	width:100%;
+	height:140px;
+}
+
+.layout > .main > .right > .ad2 {
+	height:155px;
+	margin-bottom:36px;
+    position: relative;
+    cursor:pointer;
+}
+
+.layout > .main > .right > .ad2 > a {
+    position:relative;
+    display:block;
+}
+
+.layout > .main > .right > .ad2  .mask > span  {
+    position: absolute;
+    top: 53px;
+    letter-spacing: 2px;
+    right: 43px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.layout > .main > .right > .ad2:hover  .mask {
+    transition: 1s all;
+    width:100%;
+    height:140px;
+    background-color:rgba(0,0,0,.3);
+    position:absolute;
+    top:0px;
+    z-index:2;
+    left:0px;
+}
+
+.layout > .main > .right > .ad2:hover  .mask > span {
+    opacity:1;
+}
+
+
+
+
+
+.layout > .main > .right > .ad2 > img {
+	width:100%;
+	height:140px;
+}
+
+ul {
+	/*padding: 0px;*/
+	margin: 0px;
+	list-style: none;
+}
+
+.layout > .main > .left > .article-list {
+	padding-bottom: 40px;
+}
+
+.layout > .main > .left > .article-list > h3{
+	font-weight:normal;
+	font-size:24px;
+    line-height:24px;
+	color:#333;
+	text-indent:30px;
+	border-left:6px solid rgb(220,220,220);
+	margin-bottom: 20px
+}
+
+.layout > .main > .left > .article-list > .more{
+	border-bottom:1px dashed rgb(204,204,204);
+	margin-top:20px;
+	text-align:right;
+	font-size:16px;
+	padding-bottom:9px;
+    display:block;
+
+}
+
+.layout > .main > .left > .article-list > .more > a{
+	color:rgb(27,144,255);
+}
+.layout > .main > .left > .article-list > ul > li > a {
+	line-height:50px;
+	height:50px;
+	color:#333;
+	font-size:16px;
+}
+.layout > .main > .left > .article-list > ul {
+	padding-left: 4px;
+    padding-left:15px;
+}
+.layout > .main > .left > .article-list > ul > li > a:before {
+	content: '';
+	width: 16px;
+	height:16px;
+	background: url('../images/video.png') no-repeat;
+    margin-right:9px;
+    display:inline-block;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	top: 3px;
+}
+.layout > .main > .left > .article-list > ul.dot > li > a:before {
+    background-image: url('../images/dot.png');
+    background-position:center;
+    background-size:auto;
+}
+.bbs-panel {
+	border:1px solid rgb(220,220,220);
+
+}
+
+.bbs-panel > .bbs-panel-header{
+	height:50px;
+	line-height:50px;
+	color:#333;
+	font-size:16px;
+	text-align:center;
+	background-color:rgb(245,245,245);
+	border-bottom:1px solid rgb(220,220,220)
+}
+
+.bbs-panel > .bbs-panel-body{
+	/*height:356px;*/
+	padding:24px;
+	font-size:14px;
+}
+
+.bbs-panel > .bbs-panel-body > ul {
+	/*padding-left:24px;*/
+	padding-bottom:24px;
+	border-bottom:1px solid rgb(220,220,220)
+}
+
+.bbs-panel > .bbs-panel-body > ul > li {
+    list-style:none;
+	height: 27px;
+	overflow:hidden;
+	line-height: 27px;
+}
+
+.bbs-panel > .bbs-panel-body > ul > li:first-child {
+    font-weight:bold;
+}
+
+.bbs-panel > .bbs-panel-body > ul > li > a:before {
+    content: '';
+    display:inline-block;
+    position: relative;
+    top:5px;
+    background: url('../images/dot.png') no-repeat;
+    width:20px;
+    height:20px;
+    background-size: auto;
+    background-position:center;
+    margin-right:5px;
+}
+
+.bbs-panel > .bbs-panel-body > ul > li > a{
+	display: block;
+	width:220px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	word-break: normal;
+	white-space:nowrap;
+	text-decoration: none;
+	color: #333;
+	height: 27px;
+	line-height: 27px;
+}
+
+
+.layout > .main > .left {
+	margin-right: 318px;	
+}
+
+/*friendlink*/
+
+ .friend-link {
+    width:100%;
+    background-color:rgb(245,245,245);
+    /*height:120px;*/
+}
+
+.friend-link:after {
+    display: table;
+    clear:both;
+    content:'';
+}
+
+.friend-link > div {
+    width:1200px;
+    margin: 0 auto;
+}
+
+.friend-link > div > label {
+    /*float:left;*/
+    width:90px;
+    display:inline-block;
+    color:#333;
+    font-size:16px;
+    font-weight:bold;
+    position:relative;
+    top:70px;
+
+    display:block;
+    width:100%;
+    top:30px;
+    margin-left:16px;
+}
+
+.friend-link > div > div.links > ul > li > a{
+    display:inline-block;
+    width:98px;
+    text-align:left;
+    border-right:1px solid #ccc;
+    font-size:12px;
+    color:#333;
+    margin-bottom:30px;
+    float:left;
+    line-height:16px;
+}
+
+.friend-link > div > div.links > ul:after {
+    clear:both;
+    display:block;
+    content:'';
+}
+
+.friend-link > div > div.links > ul > li > a > span {
+    position:relative;
+    left:16px;
+}
+
+.friend-link > div > div.links > .link1 {
+    margin-bottom:25px;
+}
+.friend-link > div > div.links {
+    /*margin-left:90px;*/
+    position: relative;
+    top: 70px;
+    height:200px;
+    
+}
+
+.friend-link > div > div.links:after {
+    content: '';
+    clear:both;
+    display:table;
+}
+
+.no-border{
+    border:0px!important;
+}

@@ -1,0 +1,284 @@
+﻿body {
+	background: #f5f5f5;
+}
+
+.helpCenter {
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 18px;
+}
+
+.helpCenter > .sidebar {
+	float: left;
+	width: 200px;
+	margin-bottom: 18px;
+}
+
+.helpCenter .sidebar > .regNow {
+	height:200px;
+	background-image:url('../images/helpbg.png');
+	background-size:100%;
+    background-repeat:no-repeat;
+	background-position:center;
+	position: relative;
+}
+
+.helpCenter .sidebar > .regNow > div.content {
+	position: relative;
+	top: 83px;
+	width: 100%;
+	text-align: center;
+	/*opacity: 0;*/
+	transition: 1s all;
+}
+
+.helpCenter .sidebar > .regNow > .mask {
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,.3);
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	transition: 1s all;
+}
+
+.helpCenter .sidebar > .regNow:hover > div {
+	opacity: 1;
+}
+ 
+.helpCenter .sidebar > .regNow > div > a > button {
+	width: 130px;
+	text-align: center;
+	height: 42px;
+	line-height: 42px;
+	background-color: #42a4ff;
+	border-radius: 30px;
+	margin-bottom: 24px;
+	border: 0px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.helpCenter .sidebar > .regNow > div > p {
+	color: #fff;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.helpCenter > .sidebar > .theme > .title {
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	color: #646464;
+	padding: 0px 20px;
+	border-bottom: 1px solid #ebebeb;
+	font-weight: bold;
+
+	background: -moz-linear-gradient(top, #fafafa, #ebebeb);
+    background: -webkit-gradient(linear,top,from(#fafafa),to(#ebebeb));
+    background: -webkit-linear-gradient(top, #fafafa, #ebebeb);
+    background: -o-linear-gradient(top, #fafafa, #ebebeb);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 0, startColorstr = #fafafa, endColorstr = #ebebeb);   
+}
+
+.helpCenter > .sidebar > .theme {
+	border: 1px solid #ebebeb;
+	margin-bottom: 16px;
+	background-color: #fff;
+}
+
+.helpCenter > .sidebar > .theme > .problemList {
+	padding: 0px 20px;
+	/*margin-bottom: 16px;*/
+}
+
+.helpCenter > .sidebar > .theme > .problemList > .listItem {
+	padding: 20px 0px;
+	border-bottom: 1px dashed #ebebeb;
+	line-height: 28px;
+}
+
+.helpCenter > .sidebar > .theme > .problemList > .listItem:last-child {
+	border-bottom: 0px;
+}
+
+.helpCenter > .sidebar > .theme > .problemList > .listItem > h3 {
+	font-size: 16px;
+	color: #646464;
+	/*font-weight: bold;*/
+}
+
+.helpCenter > .sidebar > .theme > .problemList > .listItem > h3:before {
+	content: '';
+	font-size: 40px;
+	color: #a3a3a3;
+	display: inline-block;
+	border: 3px solid #a3a3a3;
+	border-radius: 50%;
+	margin-right: 10px;
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+}
+
+.helpCenter > .sidebar > .theme > .problemList > .listItem > ul {
+	padding-left: 16px;
+}
+
+.helpCenter > .sidebar > .theme > .problemList > .listItem > ul > li > a {
+	color: #999;
+	font-size: 14px;
+}
+
+.helpCenter > .sidebar > .theme > .problemList > .listItem > ul > li > a:hover {
+   color:#42a4ff;
+}
+
+.helpCenter > .sidebar > .theme > .problemList > .listItem > ul > li.active	> a {
+	color: #42a4ff;
+}
+
+.helpCenter > .main {
+	margin-left: 226px;
+	border: 1px solid #ebebeb;
+	background-color: #fff;
+    min-height:460px;
+}
+
+.helpCenter > .main > .bread {
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px dashed #ebebeb;
+	margin: 0px 20px;
+}
+
+.helpCenter > .main > .bread > a {
+    color:#666;
+}
+
+.helpCenter > .main > .bread > a:hover {
+	color:#42a4ff;
+}
+
+.helpCenter > .main > .bread > .present{
+    color:#42a4ff   ;
+}
+
+.helpCenter > .main > .listWrap {
+	padding: 20px;
+}
+
+.helpCenter > .main > .listWrap > .listItem {
+	margin-bottom: 18px;
+}
+
+.helpCenter > .main > .listWrap > .listItem > p {
+	font-size: 16px;
+	color: #666;
+	margin-bottom: 14px;
+	cursor: pointer;
+	height: 36px;
+	line-height: 36px;
+	padding: 0px 18px;
+}
+
+.helpCenter > .main > .listWrap > .listItem > p:hover {
+	background-color: #fafafa;
+}
+
+.helpCenter > .main > .listWrap > .listItem > p > i {
+	border: 1px solid #ebebeb;
+	width:12px;
+	height:12px;
+	display: inline-block;
+	position: relative;
+	margin-right: 10px;
+	vertical-align: middle;
+	top: -2px;
+}
+
+.helpCenter > .main > .listWrap > .listItem > .detail {
+	border: 1px solid #eaeaea;
+	padding: 36px 18px;
+	font-size: 12px;
+	/*color: #999;*/
+	position: relative;
+	line-height: 18px;
+	background-color: #fafafa;
+	margin: 0px 18px;
+
+	display: none;
+}
+
+.helpCenter > .main > .listWrap > .listItem > .detail > .close:after {
+	display: inline-block;
+	content: '×';
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	color:#ccc;
+	font-style: normal;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	font-size: 20px;
+
+}
+
+.helpCenter > .main > .listWrap > .listItem > .detail:before,.helpCenter > .main > .listWrap > .listItem > .detail:after {
+	border: 8px solid transparent;
+	border-bottom: 8px solid #fafafa;
+	width: 0;
+	height: 0;
+	position: absolute;
+	left: 10px;
+	top: -14px;
+	content: ''
+}
+
+.helpCenter > .main > .listWrap > .listItem > .detail:before {
+	border-bottom-color: #ebebeb	;
+  	top: -16px;
+}
+
+.helpCenter > .main > .listWrap > .listItem > p > i:before,.helpCenter > .main > .listWrap > .listItem > p > i:after {
+	border: 5px solid transparent;
+	border-bottom: 5px solid #fff;
+	width: 0;
+	height: 0;
+	position: absolute;
+	bottom: 0px;
+	left: 1px;
+	right: 1px;
+	top: 0px;
+	content: '';
+}
+
+.helpCenter > .main > .listWrap > .listItem > p > i:before {
+	border-bottom-color: #42a4ff;
+  	top: -2px;
+}
+
+.helpCenter > .main > .listWrap > .listItem > p > i.down:before,.helpCenter > .main > .listWrap > .listItem > p > i.down:after {
+	border: 5px solid transparent;
+	border-top: 5px solid #fff;
+	width: 0;
+	height: 0;
+	position: absolute;
+	right: 1px;
+	top: 2px;
+	content: ''
+}
+
+.helpCenter > .main > .listWrap > .listItem > p > i.down:before {
+	border-top-color: #42a4ff;
+  	top: 4px;
+}
+
+
+
+
