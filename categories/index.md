@@ -1,0 +1,4 @@
+---
+layout: categories
+comments: false
+---
