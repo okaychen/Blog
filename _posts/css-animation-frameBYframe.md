@@ -6,8 +6,7 @@ tags:
     - CSS
     - animation
 categories:
-    - web开发
-    - CSS
+    - HTML/CSS
 ---
 
 # 写在前面

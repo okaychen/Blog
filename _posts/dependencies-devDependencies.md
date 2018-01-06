@@ -6,8 +6,7 @@ tags:
     - node
     - 前端环境
 categories:
-    - web开发
-    - node
+    - Node
 ---
 
 # 写在前面

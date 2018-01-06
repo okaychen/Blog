@@ -6,8 +6,7 @@ tags:
     - node
     - 并发，并行
 categories:
-    - web开发
-    - node
+    - Node
 ---
 
 # 聊聊并发与并行

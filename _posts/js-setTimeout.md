@@ -8,8 +8,7 @@ tags:
     - event queue
     - stack
 categories:
-    - web开发
-    - JS
+    - JavaScript
 ---
 
 # 聊聊同步、异步和回调

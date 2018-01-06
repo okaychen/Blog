@@ -6,8 +6,7 @@ tags:
     - CSS
     - layout
 categories:
-    - web开发
-    - CSS
+    - HTMLCSS
 ---
 # 盒模型
 

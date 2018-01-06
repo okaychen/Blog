@@ -7,8 +7,7 @@ tags:
     - JS
     - Canvas
 categories:
-    - web开发
-    - JS
+    - JavaScript
 ---
 
 # 回味

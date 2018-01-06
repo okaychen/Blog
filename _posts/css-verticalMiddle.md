@@ -6,8 +6,7 @@ tags:
     - CSS
     - layout
 categories:
-    - web开发
-    - CSS
+    - HTML/CSS
 ---
 
 > "44年前我们就把人类送上了月球了，但现在我们仍然无法在css中实现垂直居中  -James Anderson"
