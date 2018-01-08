@@ -53,7 +53,7 @@ categories:
 
 在标准模式下的盒模型如下图所示，盒子总宽度/高度=width/height+padding+border+margin
 
-![标准盒模型](http:www.chenqaq.com/assets/images/box-model1.png)
+![标准盒模型](http://www.chenqaq.com/assets/images/box-model1.png)
 
 ### 怪异模式
 
@@ -63,7 +63,7 @@ categories:
 
 也即是说 `width = 内容区宽度 + padding + border`
 
-![怪异盒模型](http:www.chenqaq.com/assets/images/box-model2.png)
+![怪异盒模型](http://www.chenqaq.com/assets/images/box-model2.png)
 
 # CSS3的box-sizing属性
 

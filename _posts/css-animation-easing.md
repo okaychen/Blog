@@ -15,7 +15,7 @@ categories:
 
 以纯技术的角度来看，回弹效果是指当一个过渡达到最终值时，往回到一点，然后再次回到最终值，如此往复一次或者多次，并逐渐收敛，最终稳定在最终值。有相当的多JavaScript类库可以创建动画，且内置回弹效果等其他缓动效果。但是眼下，我们其实已经不需要借助脚本来实现过渡和动画了。不过，在CSS中实现回弹效果的最佳方式是什么呢？
 
-![弹跳效果](http:www.chenqaq.com/assets/images/easingP.png)
+![弹跳效果](http://www.chenqaq.com/assets/images/easingP.png)
 
 
 # 弹跳动画
@@ -35,7 +35,7 @@ categories:
 
 如果不指定调速函数，就是得到一个默认值。但是这个`默认值`并不是我们想象中的匀速效果，而是：
 
-![默认值](http:www.chenqaq.com/assets/images/easing2.png)
+![默认值](http://www.chenqaq.com/assets/images/easing2.png)
 
 注意，当时间进行到一半时，这个过渡已经推进到80%.
 
@@ -43,11 +43,11 @@ categories:
 
 不论是在`animation/transition`简写属性中，还是在`animation-timing-function/transition-timing-function`展开属性中，你都可以把这个默认的调速函数显示指定`ease`关键字。除了ease外，还有四种内置的缓动曲线，你可以借助他们来改变动画的推进方式
 
-![ease-out](http:www.chenqaq.com/assets/images/easing-easeOut.png)
-![ease-in](http:www.chenqaq.com/assets/images/easing-easeIn.png)
+![ease-out](http://www.chenqaq.com/assets/images/easing-easeOut.png)
+![ease-in](http://www.chenqaq.com/assets/images/easing-easeIn.png)
 
-![ease-in-out](http:www.chenqaq.com/assets/images/easing-easeInOut.png)
-![linear](http:www.chenqaq.com/assets/images/easing3.png)
+![ease-in-out](http://www.chenqaq.com/assets/images/easing-easeInOut.png)
+![linear](http://www.chenqaq.com/assets/images/easing3.png)
 
 从上面四个图中，我们很直观的看出，`ease-out`是`ease-in`的反向版本。而这一对组合正是实现回弹效果所需要的：`每当小球的运动方向相反时，我们希望调速函数也是相反的`。我们希望小球下落是加速的`(ease-out)`,而弹起向上是减速的`(ease-in)`:
 
@@ -144,7 +144,7 @@ input:focus + .callout{ animation:elastic-grow .5s; }
 
 这里我们就用到了上面说起的调速函数`cubic-bezier()`，在这个例子中，我们希望调速函数先到达110%的程度(相当于`scale(1.1)`)，然后在过渡回100%，我们把控制锚点向上移，
 
-![cubic-bezier(.25,.1,.3,1.5)](http:www.chenqaq.com/assets/images/Tankease.png)
+![cubic-bezier(.25,.1,.3,1.5)](http://www.chenqaq.com/assets/images/Tankease.png)
 
 这个自定义调速函数在垂直坐标上已经超出0~1的区间，最终又回到1，在70%的时间点到达了110%的变形程度的高峰，然后继续用剩下30%的时间回到它的最终值
 
@@ -157,7 +157,7 @@ input:not(:focus) + .callout{ transform:scale(0) }
     transition:.5s cubic-bezier(.25,.1,.3,1.5);
 }
 ```
-![cubic-bezier(.25,.1,.3,1.5)](http:www.chenqaq.com/assets/images/Tankbug.png)
+![cubic-bezier(.25,.1,.3,1.5)](http://www.chenqaq.com/assets/images/Tankbug.png)
 
 but,wait...当提示框收缩时，左下角出现的是什么？其实，当我们把焦点从输入框切出去的时候，所触发的过渡会以`scale(1)`作为起始值，并以`scale(0)`作为最终值，这个过渡仍然会在350ms后到达110%的变形程度。只不过在这里，110%的变形程度的解析结果并不是`scale(1.1)`,而是scale`(-0.1)`
 

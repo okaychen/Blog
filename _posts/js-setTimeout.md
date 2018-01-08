@@ -31,7 +31,7 @@ categories:
 异步任务也就是 指主线程（stack栈）运行的过程中，当stack空闲的时候，主线程对event queque（队列）轮询(事实上一直在轮询)后，将异步任务放到stack里面进行执行；
 
 
-![（上图转引自Philip Roberts的演讲《Help, I'm stuck in an event-loop》））](http:www.chenqaq.com/assets/images/event.png)
+![（上图转引自Philip Roberts的演讲《Help, I'm stuck in an event-loop》））](http://www.chenqaq.com/assets/images/event.png)
 
  简单的说，如果我们指定过回调函数，那么当事件发生时就会进入事件队列，等待主线程的`stack`空闲的时候，就会对`event queue`里面的回调读取并放到`stack`里面执行
 
@@ -43,7 +43,7 @@ categories:
 # 经典闭包setTimeout分析
 今天同学问了我一个问题，我一看是一道经典的面试题，问题如下：
 
-![question](http:www.chenqaq.com/assets/images/questions.png)
+![question](http://www.chenqaq.com/assets/images/questions.png)
 
 简单的这个问题改一下：
 ```JavaScript
@@ -59,7 +59,7 @@ for (var i = 0; i <= 5; i++) {
 
 相信我们很多人都遇到过这个问题，心中或许都有答案：
 
-![result](http:www.chenqaq.com/assets/images/results.png)
+![result](http://www.chenqaq.com/assets/images/results.png)
 
 那么为什么并不是入门者心中所想要的结果嘞(为什么`setTimeout`中打印出`i`全部是`6`，而且是最后才打印出来呢)？
 
@@ -77,7 +77,7 @@ for (var i = 0; i <= 5; i++) {
 
  我们在来用这个例子尝试一下上面的event loop图，更加直观的感受一下：
 
- ![](http:www.chenqaq.com/assets/images/eventMe.png)
+ ![](http://www.chenqaq.com/assets/images/eventMe.png)
 
  那么接下来可能会问怎么解决这个问题呢？我想最简单的当然是`let`语法了，
 

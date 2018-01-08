@@ -30,7 +30,7 @@ categories:
 
 使用`npm install`将依赖模块安装到项目，但不写package.json（不推荐，这样最终需要手动添加）；使用`npm install --save`将模块安装到项目，写入的package.json的`dependencies`中；使用`npm install --save-dev`将模块安装到本地，写入package.json的`devDependencies`中。
 
-![开发环境生产环境](http:www.chenqaq.com/assets/images/dev1.png)
+![开发环境生产环境](http://www.chenqaq.com/assets/images/dev1.png)
 
 小T恍然大悟，原来是这样呀。那么前端工程化中的`开发环境`和`生产环境`到底有怎么样的区别呢？
 
@@ -70,7 +70,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 ```
-![req.app.get('env')](http:www.chenqaq.com/assets/images/env2.png)
+![req.app.get('env')](http://www.chenqaq.com/assets/images/env2.png)
 
 
 # 参考资料
