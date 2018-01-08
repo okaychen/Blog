@@ -140,7 +140,7 @@ async.mapLimit(urls,5,function(url,callback){
 
 运行输出后得到以下结果
 
-![](../../../../assets/images/concurrency1.png)
+![](http:www.chenqaq.com/assets/images/concurrency1.png)
 
 我们发现，并发数从1开始增长，但是增长到5时，就不在增加。然有任务时就继续抓取，并发连接数量始终控制在5个。
 
@@ -157,7 +157,7 @@ async.mapLimit(urls,5,function(url,callback){
 <!--  -->
 通过`npm`安装依赖模块
 
-![](../../../../assets/images/concurrency2.png)
+![](http:www.chenqaq.com/assets/images/concurrency2.png)
 
 第二步，通过require引入依赖模块，确定爬取对象URL：
 ```js
@@ -235,7 +235,7 @@ async.mapLimit(arr,3,function(url,callback){
 
 好了，到这里我们的node简易的小爬虫就完成了，来看看效果吧
 
-![](../../../../assets/images/concurrency3.png)
+![](http:www.chenqaq.com/assets/images/concurrency3.png)
 
 嗨呀，首页数据好少，但是成功了呢。
 

@@ -70,18 +70,18 @@ app.get('/user/:id',(req,res,next)=>{
     console.log('USER');
 })
 ```
-![$ node app](../../../../assets/images/middlewarp1.png)
-![result](../../../../assets/images/middlewarp2.png)
+![$ node app](http:www.chenqaq.com/assets/images/middlewarp1.png)
+![result](http:www.chenqaq.com/assets/images/middlewarp2.png)
 
 如果我们想要`处理挂在至/user/:id`的中间件的GET请求，我们需要使用`next()`将`request`对象传递给下一个中间件
 
 否者：
-![error](../../../../assets/images/middlewarp3.png) 
+![error](http:www.chenqaq.com/assets/images/middlewarp3.png) 
 
 得不到下一个中间件处理的它，一直在等待...
 最终会抛出localhost未发送任何数据的错误
 
-![error](../../../../assets/images/middlewarp4.png)
+![error](http:www.chenqaq.com/assets/images/middlewarp4.png)
 
 如何你不想要终止`请求-响应循环`,总是记得通过`next()`传递request对象
 

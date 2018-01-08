@@ -14,7 +14,7 @@ categories:
 
 小时候玩的经典贪吃蛇游戏我们印象仍然深刻，谋划了几天，小时候喜欢玩的游戏，长大了终于有能力把他做出来(从来都没有通关过，不知道自己写的程序，是不是能通关了...)，好了，闲话不多谈，先来看一下效果吧！！
 
-![效果图](../../../../assets/images/4tjOY7QXHK.gif)
+![效果图](http:www.chenqaq.com/assets/images/4tjOY7QXHK.gif)
 
 功能和小时候玩的贪吃蛇一样，
 
@@ -32,14 +32,14 @@ categories:
 # 结构分解
 如果构建一个简单的经典贪吃蛇游戏呢？我们根据面板可以分解出如下结构：
 
-![面板结构分解](../../../../assets/images/snake1.png)
+![面板结构分解](http:www.chenqaq.com/assets/images/snake1.png)
 
 因为其他面板比较简单，我们重点来看一下游戏面板
 
 ## 游戏面板
 游戏面板是核心，在游戏面板中，我们来分解一下游戏面板我们需要的因素：
     
-![](../../../../assets/images/snake2.png)
+![](http:www.chenqaq.com/assets/images/snake2.png)
 
 ### 场景、snake、食物
 首先我们需要一个游戏场景、snake、食物这些基础设施

@@ -19,7 +19,7 @@ categories:
 
 但是在逐帧动画的场景下，这种平滑的特性恰恰毁掉了我们想要实现的逐帧动画的效果.
 
-![](../../../../assets/photos/yi.png)
+![](http:www.chenqaq.com/assets/photos/yi.png)
 
 # 逐帧动画
 我们经常会看到一段卡通影片、一个复杂进度的提示框、一个小loading，
@@ -29,7 +29,7 @@ categories:
 - GIF动画一旦生成，参数就固定在文件内部，只能通过图像处理软件去重新生成. 
 在某些场景下，基于图片的逐帧动画成了不错的选择。
 
-![](../../../../assets/images/loading.jpg)
+![](http:www.chenqaq.com/assets/images/loading.jpg)
 
 # steps()调速函数
 
@@ -37,13 +37,13 @@ categories:
 
 对，答案就是`steps()`调速函数,与贝塞尔曲线迥然不同的是，`steps()`会根据你指定的步进数量，把动画分为很多帧，而且整个动画会在`帧与帧之间硬切`,不会像贝塞尔曲线那样做插值处理。
 
-![对比step(8)、linear以及默认ease的差异](../../../../assets/images/xy.png)
+![对比step(8)、linear以及默认ease的差异](http:www.chenqaq.com/assets/images/xy.png)
 
 通过上图我们可以很明显看出steps(8)、linear和ease的区别.
 
 其实这种硬切效果是我们极力避免的，因此我们也很少听到关于`steps()`的讨论。在CSS调速函数的世界里，基于`贝塞尔曲线`的调速函数就像是被人追捧的白天鹅，而`steps()`则是旁人唯恐不及的丑小鸭。
 
-![](../../../../assets/photos/ch.jpg)
+![](http:www.chenqaq.com/assets/photos/ch.jpg)
 
 其实无所谓好与不好，更多的是适合与不适合，我们都崇拜的贝塞尔曲线在像小"loading"这样的逐帧动画中失败了，而`steps()`却展示出我们想要的效果.
 
@@ -74,7 +74,7 @@ h1{
 - 整个动画是平滑连贯的，而不是逐字显示
 - 目前我们已经使用em指定宽度是7.7，虽然他比像素单位好一些，但是仍然不够理想，这个宽度为什么是7.7em.
 
-![](../../../../assets/photos/mi.jpg)
+![](http:www.chenqaq.com/assets/photos/mi.jpg)
 
 我们很自然的想到了使用`steps()`来修复第一个问题，但是不幸的是，我们所需要的步进数量是由字符的数量来决定的
 
