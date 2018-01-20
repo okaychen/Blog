@@ -1,5 +1,5 @@
 ---
-title: 我找不到dev-server.js，请允许我给mock数据找一个接口
+title: 我找不到dev-server，请允许我给mock数据找一个接口
 date: 2018-01-19 20:37:03
 excerpt_render: true  
 comments: true
@@ -12,7 +12,7 @@ categories:
     - web开发
 ---
 
-我们想要给我们的mock data 找一个接口请求，原版配置在`dev-server.js`，新版的`vue-webpack-template`删除了`dev-server.js`，改用`webpcak.dev.conf.js`代替（具体更新见[github：switch to webpack-dev-server](https://github.com/vuejs-templates/webpack/pull/975)）
+我们想要给我们的mock data 找一个接口请求，原版配置在 dev-server.js ，新版的 vue-webpack-template 删除了dev-server.js，改用webpcak.dev.conf.js代替（具体更新见[github：switch to webpack-dev-server](https://github.com/vuejs-templates/webpack/pull/975)）
 
 ![switch to webpack-dev-server](http://www.chenqaq.com/assets/images/vuecli1.png)
 
@@ -102,4 +102,4 @@ created(){
 }
 ```
 
-这样我们的`data mock`就有接口可以访问喽，哈哈，可以继续下面课程的学习了
+这样我们的`data mock`就有接口可以访问喽。
