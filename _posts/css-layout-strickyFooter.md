@@ -17,7 +17,7 @@ stricky footer设计是最古老和最常见的效果之一，我们都曾经历
 
 ![](http://www.chenqaq.com/assets/images/strickyFooter1.png)
 
-上图底部的`x`就用到了经典的stricky footer，单页面内容足够时，它会向下推送；当页面内容没有撑满整个屏幕时，它就固定在底部。
+上图底部的`x`就用到了经典的stricky footer，当页面内容足够时，它会向下推送；当页面内容没有撑满整个屏幕时，它就固定在底部。
 
 而不是像下图这样：
 
