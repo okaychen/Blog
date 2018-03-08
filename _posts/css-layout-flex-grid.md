@@ -8,8 +8,6 @@ categories:
     - HTML/CSS
 ---
 
-# 写在前面
-
 相比传统的布局方式，flex和grid使布局系统简化，轻松的解决了复杂的web布局。
 早在以前，所有的HTML布局还是通过table，float以及其他css属性来完成。面对复杂的布局，就没有很好的办法了。
 
