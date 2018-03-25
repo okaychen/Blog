@@ -123,4 +123,120 @@ function debounce(func, wait) {
 }
 ```
 
-# 实现节流throttle
+### event对象
+JavaScript在事件处理函数中提供事件对象event；
+```js
+function getAction(e){
+  console.log(e);
+  container.innerHTML = count++;
+}
+```
+如果我们不使用debounce函数，通过container.onmousemove调用，这里便会打印出MouseEvent对象
+![MouseEvent](http://www.chenqaq.com/assets/images/debounce3.png)
+
+但是如果在通过debounce函数，却只会打印出undefined!让我们来改善一下debounce函数
+```js
+function debounce(func, wait) {
+  var timeout;
+
+  return function () {
+    var context = this;
+    var args = arguments;
+
+    clearTimeout(timeout)
+    timeout = setTimeout(function () {
+      func.apply(context, args)
+    }, wait);
+  }
+}
+```
+到此为止，在我们根据原理写的debounce的基础上，我们又解决了this指向和event对象的问题。
+
+### 立即执行
+这时候我们的代码已经很完善了，但是我们应该考虑到的一点是：
+上面的代码我们总是需要等到事件停止触发n秒后。
+我们想要的是：开始时候立即执行函数，然后等到停止触发n秒后，才可以重新触发执行。
+我们加一个immediate参数判断是否立即执行。
+```js
+function debounce(func, wait, immediate) {
+  var timeout, result;
+  return function () {
+    var context = this;
+    var args = arguments;
+
+    if (timeout) clearTimeout(timeout);
+    if (immediate) {
+      // 如果已经执行过，不再执行
+      var callNow = !timeout;
+      timeout = setTimeout(function () {
+        timeout = null;
+      }, wait)
+      if (callNow) result = func.apply(context, args);
+    } else {
+      timeout = setTimeout(function () {
+        func.apply(context, args);
+      }, wait);
+    }
+    return result;
+  }
+}
+
+```
+
+### 取消
+最后我们希望能够取消debounce函数，比如我们的debounce函数的时间间隔是10秒钟，immediate为true，这样的话，我们只有等待10s后才可以触发事件，所以我希望能有一个按钮能够取消防抖，这样再去触发，就可以又立刻执行啦。
+```js
+function debounce(func, wait, immediate) {
+
+    var timeout, result;
+
+    var debounced = function () {
+        var context = this;
+        var args = arguments;
+
+        if (timeout) clearTimeout(timeout);
+        if (immediate) {
+            // 如果已经执行过，不再执行
+            var callNow = !timeout;
+            timeout = setTimeout(function(){
+                timeout = null;
+            }, wait)
+            if (callNow) result = func.apply(context, args)
+        }
+        else {
+            timeout = setTimeout(function(){
+                func.apply(context, args)
+            }, wait);
+        }
+        return result;
+    };
+
+    debounced.cancel = function() {
+        clearTimeout(timeout);
+        timeout = null;
+    };
+
+    return debounced;
+}
+```
+我们如何使用cancel函数呢？依然以上面的demo为例
+```js
+'use strict'
+
+let count = 1;
+let container = document.getElementById('container');
+
+function getAction() {
+  container.innerHTML++;
+}
+
+var setAction = debounce(getAction,10000,true);
+
+container.onmousemove = setAction;
+
+document.getElementById("button").addEventListener('click', function(){
+  setAction.cancel();
+})
+```
+效果演示如下：
+![debounce cancel](http://www.chenqaq.com/assets/images/debounce3.gif)
