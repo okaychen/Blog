@@ -28,7 +28,7 @@ categories:
 >        off
 
 看完效果就先附上地址喽：[大山深处修炼的小龙虾](https://github.com/okaychen/practice)，欢迎fork.
-
+<!-- more -->
 # 结构分解
 如果构建一个简单的经典贪吃蛇游戏呢？我们根据面板可以分解出如下结构：
 

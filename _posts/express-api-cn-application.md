@@ -15,6 +15,11 @@ categories:
 - [Express4.x API (三)：Response (译) -- 完成](http://www.cnblogs.com/okaychen/p/8087425.html)
 - [Express4.x API (四)：router (译) -- 完成](http://www.cnblogs.com/okaychen/p/8093717.html)
 
+技术库更迭较快，很难使译文和官方的API保持同步，更何况更多的大神看英文和中文一样的流畅，不会花时间去翻译--，所以我们看到[express中文网](http://www.expressjs.com.cn)更多的还是英文，我们只有提升自己的英语能力才能更快的适应库的更新迭代,阅读到最新资料.
+所以我此次翻译的目的，一是熟悉express文档，二是锻炼自己英语阅读能力；
+
+>原文地址：[express.com](http://www.expressjs.com.cn/4x/api.html#res)
+<!-- more -->
 # Application
 app对象是指一个Express应用程序，通过调用的顶层的express()函数创造它
 ```js

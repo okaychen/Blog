@@ -12,7 +12,7 @@ categories:
 stricky footer设计是最古老和最常见的效果之一，我们都曾经历过类似的情景：
 
 >如果页面内容不够长的时候，页脚块粘贴在底部；如果内容足够长时，页脚块会被内容向下推送。
-
+<!-- more -->
 这些天做vue+express实战的练习，跟着黄轶老师倒是认识了stricky footer，就认真的了解学习了一下，但是前两天的问题，今天几种解决方案的详细情况竟然有些模糊，所以还是记录下来吧！求学之路就是这样，不断地积累和重复。
 
 ![](http://www.chenqaq.com/assets/images/strickyFooter1.png)

@@ -15,7 +15,7 @@ categories:
 盒模型分为：标准w3c盒模型、IE盒模型、以及css中的伸缩盒模型
 
 当我们使用编辑器创建一个html页面时，我们一定会发现最顶上的`DOCTYPE`标签
-
+<!-- more -->
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 

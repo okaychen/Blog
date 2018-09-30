@@ -14,7 +14,7 @@ categories:
 - [Express4.x API (二)：request (译) -- 完成](http://www.cnblogs.com/okaychen/p/8081275.html)
 - [Express4.x API (三)：Response (译) -- 完成](http://www.cnblogs.com/okaychen/p/8087425.html)
 - [Express4.x API (四)：router (译) -- 完成](http://www.cnblogs.com/okaychen/p/8093717.html)
-
+<!-- more -->
 已经完成了Express4.x API中的Requst和Response对象的文档翻译。简单的总结，request对象即表示HTTP请求，包含了请求查询字符串，参数，内容，HTTP头等属性；response对象则表示HTTP响应，即在受到请求时向客户端发送的HTTP响应数据。Express则基于此提供给我们一些方法，完成指定的请求和响应。
 
 技术库更迭较快，很难使译文和官方的API保持同步，我们只有提升自己的英语能力才能更快的适应库的更新迭代,阅读到最新资料。

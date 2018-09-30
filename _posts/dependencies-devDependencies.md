@@ -1,5 +1,5 @@
 ---
-title: dependencies和devDependencies的正确使用姿势-这一次彻底弄懂吧
+title: dependencies和devDependencies的正确使用姿势
 date: 2017-12-29 15:27:45
 comments: true
 tags:
@@ -13,7 +13,7 @@ categories:
 刀耕火种的时代已经过去，前端开发急需自动化，工程化。
 
 有一天，你找到公司新人程序员小T和小F，给他们每个人分配了一个任务。小T和小F微笑的答应了，确定了项目的选型和结构，小T和小F准备安装依赖的模块。但是他们开始对于dependencies和devDependencies并没有那么在意：
-
+<!-- more -->
 程序员小T把所有的依赖模块都使用 `npm install --save`，将依赖安装在项目中，并写入了package.json的`dependencies`(生产环境)，最终导致项目臃肿不堪，前端是对性能的狂热追求者，最终小T的项目没有通过测试。 
 
 程序员小F把所有的依赖模块使用`npm install --save-dev`,将依赖安装在项目中，并写入了package.json中的`devDependencies`(本地开发环境)，最终导致正常运行该项目使用了哪些依赖模块无从得知，预想后期会带来很多麻烦，导致小F的项目也没有通过测试

@@ -12,7 +12,7 @@ categories:
 # 有个开始吧！
 
 网上有很多的防抖与节流的文章，自己也早有耳闻，之前看underscore的代码，也发现了两个与众不同的函数debounce和throttle，仿佛是有特定的用途。学习实践之后便总结下这篇文章。
-
+<!-- more -->
 在前端开发中经常遇到一些频繁触发的事件，比如
 - 键盘事件：keyup、keydown...
 - window：resize、scroll...

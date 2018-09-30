@@ -11,7 +11,7 @@ categories:
 
 # 底层：http模块
 express目前是最流行的基于Node.js的web开发框架，express框架建立在内置的http模块上，
-
+<!-- more -->
 ```js
 var http = require('http')
 var  app = http.createServer(function(req,res){

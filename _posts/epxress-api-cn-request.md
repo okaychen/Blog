@@ -14,7 +14,7 @@ categories:
 - [Express4.x API (二)：request (译) -- 完成](http://www.cnblogs.com/okaychen/p/8081275.html)
 - [Express4.x API (三)：Response (译) -- 完成](http://www.cnblogs.com/okaychen/p/8087425.html)
 - [Express4.x API (四)：router (译) -- 完成](http://www.cnblogs.com/okaychen/p/8093717.html)
-
+<!-- more -->
 # 写在前面
 最近学习express想要系统的过一遍API，[www.expressjs.com](www.expressjs.com)是express英文官网(进入[www.epxressjs.com.cn](www.epxressjs.com.cn)发现也是只有前几句话是中文呀~~)，所以自己准备在express学习的过程也翻译一遍API，一是熟悉Express文档，二是锻炼自己英语阅读能力.
 
