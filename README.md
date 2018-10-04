@@ -59,3 +59,11 @@
 - [浏览器同源政策](http://www.chenqaq.com/2018/03/15/cross-domain-cors/)
 
 - [拥抱未来的布局方式：flex 和 grid](http://www.chenqaq.com/2018/03/07/css-layout-flex-grid/)
+
+# 2018年4月
+
+- [碎言心语-短笔记](https://www.chenqaq.com/2018/04/09/life-aboutIT/)
+
+# 2018年5月
+
+- [requestAnimationFrame优化web动画](https://www.chenqaq.com/2018/05/15/js-requestAnimationFrame-md/)
