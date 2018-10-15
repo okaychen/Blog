@@ -1,8 +1,8 @@
 ---
 title: lab
-layout: about
+layout: Archives
 date: 2018-09-21 19:14:42
-banner: /images/bg_img.jpg
+# banner: /images/bg_img.jpg
 ---
 
 ### 实验室，时而思如潮水，便期何以实现
@@ -13,10 +13,12 @@ banner: /images/bg_img.jpg
 
 - Github 地址（97star，41fork）：[RetroSnake](https://github.com/okaychen/RetroSnake)
 
-- 在线测试：[RetroSnake](http://www.chenqaq.com/lab/RetroSnake/)
+- 在线测试：[RetroSnake](http://www.chenqaq.com/lab/RetroSnake/index.html)
 
 实验室二：IndexedDB 增删改查.
 
 - Github 地址：无
 
-- 在线测试：[IndexedDB 简单增删改查](http://www.chenqaq.com/lab/IndexedDB/)
+- 在线测试：[IndexedDB 简单增删改查](http://www.chenqaq.com/lab/IndexedDB/index.html)
+
+1>>>>测试linux-ssh和github的连接

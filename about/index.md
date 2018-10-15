@@ -1,6 +1,6 @@
 ---
 title: about
-layout: about
+layout: Archives
 date: 2018-09-21 11:33:18
 ---
 
