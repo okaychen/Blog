@@ -1,10 +1,11 @@
 ---
 title: Express4.x API (四)：Router (译) 
 date: 2017-12-23 12:17:42
+cover: "https://cdn.jsdelivr.net/gh/okaychen/CDN@1.2/BlogSource/gallery/thumb_016.jpg"
 comments: true
 tags:
-    - node
-    - express
+    - Node
+    - Express
 categories:
     - Node
 ---

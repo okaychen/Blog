@@ -1,10 +1,11 @@
 ---
 title: Express4.x API (一)：application (译) 
 date: 2017-12-24 17:48:41
+cover: "https://cdn.jsdelivr.net/gh/okaychen/CDN@1.2/BlogSource/gallery/thumb_014.jpg"
 comments: true
 tags:
-    - node
-    - express
+    - Node
+    - Express
 categories:
     - Node
 ---

@@ -1,6 +1,7 @@
 ---
-title: 一月就要结束，我的2018年已经开始！
+title: 2018年已经开始！
 date: 2018-01-25 19:45:16
+cover: "https://cdn.jsdelivr.net/gh/okaychen/CDN@1.2/BlogSource/gallery/thumb_037.jpg"
 tags: 岁言心语
 categories: 岁言心语
 ---

@@ -1,12 +1,11 @@
 ---
 title: 浏览器同源政策
 date: 2018-03-15 10:51:07
-comments: true
+cover: "https://cdn.jsdelivr.net/gh/okaychen/CDN@1.2/BlogSource/gallery/thumb_003.jpg"
 tags:
-    - 跨域
-    - 同源政策
+    - WEB安全
 categories:
-    - JavaScript
+    - WEB安全
 ---
 
 我们都知道浏览器的“同源政策”是浏览器安全的基石，根本目的是为了保护用户信息安全，防止恶意的网站窃取数据。
@@ -22,6 +21,6 @@ categories:
 - 协议相同
 - 端口相同
 
-举个栗子，http://www.chenqaq.com我的网址，协议就是http://,域名是www.chenqaq.com，端口默认为80。
+举个栗子，https://www.chenqaq.com，协议就是http://,域名是www.chenqaq.com，端口默认为80。
 
 ing...

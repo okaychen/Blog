@@ -1,6 +1,7 @@
 ---
-title: css标准盒模型、怪异模式&&box-sizing属性
+title: css标准盒模型、怪异模式
 date: 2017-12-09 23:33:26
+cover: "https://cdn.jsdelivr.net/gh/okaychen/CDN@1.2/BlogSource/gallery/thumb_005.jpg"
 comments: true
 tags:
     - CSS
@@ -73,9 +74,3 @@ box-sizing : content-box || border-box || inherit;
 
 - 当设置为content-box时，将采取标准模式进行解析计算
 - 当设置为border-box时，将采取怪异模式解析计算
-
-
-
-
-
-

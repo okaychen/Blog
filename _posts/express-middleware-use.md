@@ -1,24 +1,25 @@
 ---
-title: express中间件，一篇文章就够了
+title: Express中间件
 date: 2017-12-18 10:40:48
 comments: true
+cover: "https://cdn.jsdelivr.net/gh/okaychen/CDN@1.2/BlogSource/gallery/thumb_017.jpg"
+top: 3
 tags:
-    - node
-    - express
+    - Node
+    - Express
 categories:
     - Node
 ---
 
 # 底层：http模块
-express目前是最流行的基于Node.js的web开发框架，express框架建立在内置的http模块上，
-<!-- more -->
+express目前是最流行的基于Node.js的web开发框架，express框架建立在内置的http模块上
+
 ```js
 var http = require('http')
 var  app = http.createServer(function(req,res){
     res.writeHead(200,{"Content-type":"text/plain"});
     res.end('hello world')
 })
-
 app.listen(3000,'lcoalhost')
 ```
 上面代码的关键是使用`createServer`方法，生成一个HTTP的服务器实例。该方法接受一个回调函数，回调函数的参数分别代表HTTP请求和HTTP回应的`request`和`response`对象
@@ -34,6 +35,8 @@ app.get('/',fcuntion(req,res){
 app.listen(port)
 ```
 比较`http.createServer()`方法创建一个app实例和Express的构造方法，生成一个Express实例，两者的回调函数都是相同的。Express框架等于在http模块之上，加了一个中间层
+
+<!-- more -->
 
 # 中间件
 Express是一个自身功能极简单，完全由`路由`和`中间件`构成的web开发框架，从本质上说，一个Express应用是在调用各种中间件
@@ -199,8 +202,8 @@ function errorHandler(err,req,res,next){
 
 可选`options`参数拥有如下属性
 
-属性 | 描述 | 类型 | 缺省值 |
-----|------|----- |  ---- |
+| 属性 | 描述 | 类型 | 缺省值 |
+| :------: | ------ | ------ | ------ |
 dotfiles | 是否对外输出文件名以点（.）开头的文件。可选值为 “allow”、“deny” 和 “ignore”  | String |   "ignore" | 
 etag | 是否启用etag生成  | Boolean  |  true |
 extensions | 设置文件扩展名备份选项  | Array  | [ ] | 
@@ -209,6 +212,7 @@ lastModified|设置 Last-Modified 头为文件在操作系统上的最后修改�
 maxAge|毫秒或者其字符串格式设置 Cache-Control 头的 max-age 属性|Number|0|
 redirect|当路径为目录时，重定向至"/"|Boolean|true|
 setHeaders|设置HTTP头以提供文件的函数|Function| |
+
 下面的栗子使用了 `express.static` 中间件，其中的 `options` 对象经过了精心的设计。
 ```js
 var options = {

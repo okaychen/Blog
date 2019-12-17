@@ -1,14 +1,11 @@
 ---
-title: requestAnimationFrame优化web动画
+title: requestAnimationFrame优化
 date: 2018-05-15 18:01:39
+cover: "https://cdn.jsdelivr.net/gh/okaychen/CDN@1.2/BlogSource/gallery/thumb_030.jpg"
 categories:
   - JavaScript
 tags:
-  - JS
-  - web动画
-# photos:
-#   - /assets/photos/banner01.png
-#   - /assets/photos/banner02.png
+  - JavaScript
 ---
 
 ## requestAnimationFrame 是什么?

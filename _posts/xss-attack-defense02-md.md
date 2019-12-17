@@ -1,12 +1,11 @@
 ---
 title: web安全-浅谈xss攻防（二）
 date: 2018-10-10 16:05:13
+cover: "https://cdn.jsdelivr.net/gh/okaychen/CDN@1.2/BlogSource/gallery/thumb_007.jpg"
 tags:  
-    - web安全
-    - xss
+    - WEB安全
 categories:
-    - xss
-# banner: /assets/05.jpg
+    - WEB安全
 ---
 
 # 前言

@@ -1,10 +1,10 @@
 ---
-title: 过渡与动画 - steps调速函数&CSS值与单位之ch
+title: steps调速函数&CSS值与单位之ch
+cover: "https://cdn.jsdelivr.net/gh/okaychen/CDN@1.2/BlogSource/gallery/thumb_004.jpg"
 date: 2017-12-13 21:16:41
 comments: true
 tags:
     - CSS
-    - animation
 categories:
     - HTML/CSS
 ---
@@ -19,8 +19,10 @@ categories:
 
 但是在逐帧动画的场景下，这种平滑的特性恰恰毁掉了我们想要实现的逐帧动画的效果.
 
-![](http://www.chenqaq.com/assets/photos/yi.png)
 <!-- more -->
+
+![](http://www.chenqaq.com/assets/photos/yi.png)
+
 # 逐帧动画
 我们经常会看到一段卡通影片、一个复杂进度的提示框、一个小loading，
 我们不会单纯的选择一张GIF动画胜任，因为它的局限性和短板表现的很明显.

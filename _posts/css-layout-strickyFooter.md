@@ -1,5 +1,6 @@
 ---
 title: stricky footer的三种解决方案
+cover: "https://cdn.jsdelivr.net/gh/okaychen/CDN@1.2/BlogSource/gallery/thumb_007.jpg"
 date: 2018-02-01 21:06:54
 tags:
     - CSS

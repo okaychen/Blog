@@ -1,15 +1,15 @@
 ---
-title: 找不到dev-server，请允许我给mock数据找一个接口
+title: webpack-dev-server
 date: 2018-01-19 20:37:03
+cover: "https://cdn.jsdelivr.net/gh/okaychen/CDN@1.2/BlogSource/gallery/thumb_002.jpg"
 excerpt_render: true  
 comments: true
 tags:  
-    - vueCli
-    - express 
-    - webpcak
-    - mock
+    - Express 
+    - Webpack
+    - 构建工具
 categories:
-    - Node
+    - 构建工具
 ---
 
 我们想要给我们的mock data 找一个接口请求，原版配置在 dev-server.js ，新版的 vue-webpack-template 删除了dev-server.js，改用webpcak.dev.conf.js代替（具体更新见[github：switch to webpack-dev-server](https://github.com/vuejs-templates/webpack/pull/975)）

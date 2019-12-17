@@ -1,9 +1,10 @@
 ---
-title: 拥抱未来的布局方式：flex 和 grid
+title: 拥抱未来的布局方式
 date: 2018-03-07 17:41:18
+cover: "https://cdn.jsdelivr.net/gh/okaychen/CDN@1.2/BlogSource/gallery/thumb_006.jpg"
 tags:
   - CSS
-  - layout
+  - Layout
 categories:
   - HTML/CSS
 ---
