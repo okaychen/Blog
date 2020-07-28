@@ -14,7 +14,7 @@ categories:
 
 # 回味
 
-小时候玩的经典贪吃蛇游戏我们印象仍然深刻，谋划了几天，小时候喜欢玩的游戏，长大了终于有能力把他做出来(从来都没有通关过，不知道自己写的程序，是不是能通关了...)，好了，闲话不多谈，先来看一下效果吧！！
+小时候玩的经典贪吃蛇游戏我们印象仍然深刻，策划了几天，小时候喜欢玩的游戏，长大了终于有能力把他做出来(从来都没有通关过，不知道自己写的程序，是不是能通关了...)，好了，闲话不多谈，先来看一下效果吧！！
 
 ![效果图](https://cdn.jsdelivr.net/gh/okaychen/CDN@1.2/BlogSource/images/4tjOY7QXHK.gif)
 
@@ -217,8 +217,7 @@ ok以上展示出一些核心部分，构建出一个舞台中一只小蛇的故
 
 小时候爸妈手机里有一款小游戏叫贪吃蛇。就是一条小蛇，不停地在屏幕上游走，吃各个方向出现的食物，越吃越长。只要蛇头碰到屏幕四周，或者碰到自己的身子，小蛇就立即毙命。方寸的舞台间，亦有无限精彩；
 
-PS:到现在也没有通关过..现在不知道能不能通关了...
 
 最后附上源码：[https://github.com/okaychen/practice](https://github.com/okaychen/practice)
-在线测试：[戳我试玩](https://www.chenqaq.com/lab/RetroSnake/index.html)
+在线测试：[PC端浏览器戳我试玩](https://www.chenqaq.com/lab/RetroSnake/index.html)
 

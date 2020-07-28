@@ -10,7 +10,7 @@ tags:
 categories:
     - Node
 ---
-先简单做了一个小demo，可以设定贴吧名和特定页码爬取，源码：[node-repitle](https://github.com/okaychen/NetworkMonitoring)
+简单写了一个demo，可以设定贴吧名和特定页码爬取，源码：[node-repitle](https://github.com/okaychen/NetworkMonitoring)
 主要用的依赖：cheerio，superagent，koa
 
 <!-- more -->

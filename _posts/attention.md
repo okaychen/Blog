@@ -19,7 +19,7 @@ top: 99
 {% endnote %}
 
 {% note success %}
-2019年11月14~15日：[博客园](https:www.cnblogs/okaychen)博文迁移完成，博客整改，新增友链和Valine评论
+2019年11月14~15日：[博客园](https://www.cnblogs.com/okaychen/)博文迁移完成，博客整改，新增友链和Valine评论
 {% endnote %} 
 
 <!-- more -->
