@@ -3,7 +3,6 @@ title: Express中间件
 date: 2017-12-18 10:40:48
 comments: true
 cover: "https://cdn.jsdelivr.net/gh/okaychen/CDN@1.2/BlogSource/gallery/thumb_017.jpg"
-top: 3
 tags:
     - Node
     - Express
@@ -73,18 +72,18 @@ app.get('/user/:id',(req,res,next)=>{
     console.log('USER');
 })
 ```
-![$ node app](http://www.chenqaq.com/assets/images/middlewarp1.png)
-![result](http://www.chenqaq.com/assets/images/middlewarp2.png)
+![$ node app](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/images/middlewarp1.png)
+![result](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/images/middlewarp2.png)
 
 如果我们想要`处理挂在至/user/:id`的中间件的GET请求，我们需要使用`next()`将`request`对象传递给下一个中间件
 
 否者：
-![error](http://www.chenqaq.com/assets/images/middlewarp3.png) 
+![error](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/images/middlewarp3.png) 
 
 得不到下一个中间件处理的它，一直在等待...
 最终会抛出localhost未发送任何数据的错误
 
-![error](http://www.chenqaq.com/assets/images/middlewarp4.png)
+![error](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/images/middlewarp4.png)
 
 如何你不想要终止`请求-响应循环`,总是记得通过`next()`传递request对象
 

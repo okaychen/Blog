@@ -6,13 +6,12 @@ tags:
     - Node
     - mongodb
 categories:
-    - [Node]
-    - [mongodb]
+    - Node
 ---
 # 写在前面
 最近读《node.js学习指南》，对于mongodb没有介绍太多的工作原理，但是对于一个前端开发者，即使你还没有用过这种数据库也可以让你很好的理解和使用
 
-![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20170902035102780-1333013103.png)   　　
+![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20170902035102780-1333013103.png)   　　
 
 一本非常好的介绍node.js的书，我一直把他放在触手可及的地方。　　--Mike Amundsen
 
@@ -116,11 +115,11 @@ db.open(function (err, db) {
 
 那么我们在命令行看下结果吧- -
 
-![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20170902020515468-95946655.png)
+![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20170902020515468-95946655.png)
 
 然后我们在mongodb数据库中看下数据结果：（如果你已经配置好了mongo的环境变量，以管理员身份打开cmd，通过mongo命令启动mongodb）
 
-![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20170902020820640-1818403613.png)
+![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20170902020820640-1818403613.png)
 
 会看到数据库widgets文档中也加入了我们想要的两条数据，
 
@@ -206,7 +205,7 @@ db.open(function (err, db) {
 ```
 更新后的数据库已经改变
 
-![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20170902032013249-495013699.png)
+![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20170902032013249-495013699.png)
 
 写在后面
  使用MongoDB Native Node.js Driver模块，驱动的指令基本上和mongodb客户端是一致的，如果你跟我一样对原始的驱动模块感兴趣，那么这个nodeJS Driver官网一定可以帮到你。

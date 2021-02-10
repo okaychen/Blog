@@ -184,7 +184,7 @@ align-self:center;
 ```
 不知不觉间，我们身边的浏览器都开始让它成为现实（但是路途还很遥远：IE10及更早版本不支持，Safari 7.0 及更早版本使用-webkit前缀）
 
-![align-self:center](http://www.chenqaq.com/assets/images/hack.png)
+![align-self:center](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/images/hack.png)
 
 
 参考

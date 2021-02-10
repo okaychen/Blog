@@ -129,7 +129,8 @@ HTML编码在防止xss攻击上能起很大的作用，它主要使用对应的�
 - `'` 转成 `&#39;`
 
 实际情况中，我们可以结合这两种情况进行过滤
-![安全的过滤形式](/assets/images/xss-encode02.png)
+
+![安全的过滤形式](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/images/xss-encode02.png)
 
 # 3.Xss漏洞检测Poc
 标准的xss漏洞检测代码

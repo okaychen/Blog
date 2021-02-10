@@ -32,7 +32,7 @@ b;          // ReferenceError: b is not defined
 
 下面是我在控制台中测试：可以更好的理解作用域链。
 
-![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20170426213921397-539687826.png)
+![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20170426213921397-539687826.png)
 
 在outer内定义了另一个函数inner；那么在inner()中可以访问的变量既可以来自他自身的作用域，也可以来自其“父级”的作用域。这就形成了一条作用域链，该链的长度取决于我们的需要。
 

@@ -72,7 +72,7 @@ container.onmousemove = getAction;
 ```
 效果如下：
 
-![时间频发触发](http://www.chenqaq.com/assets/images/debounce1.gif)
+![时间频发触发](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/images/debounce1.gif)
 
 我们发现鼠标从盒子左侧平稳的滑到右侧，数字从1增加到了188，也就是说在极短的时间内getAction这个函数就触发了188次。可想而知，如果这个问题是复杂回调或者ajax请求等等，每个回调就必须在更短的时间内执行完毕，否则就会出现卡顿现象。
 
@@ -99,7 +99,7 @@ container.onmousemove = debounce(getAction, 1000);
 ```
 效果如下
 
-![debounce第一版](http://www.chenqaq.com/assets/images/debounce2.gif)
+![debounce第一版](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/images/debounce2.gif)
 
 从效果中很明显可以看出来，无论开始怎么在盒子内移动鼠标，数值都不会加1，直到鼠标停下来，并且等待1s后，getAction函数执行使数值加1。
 
@@ -134,7 +134,7 @@ function getAction(e){
 }
 ```
 如果我们不使用debounce函数，通过container.onmousemove调用，这里便会打印出MouseEvent对象
-![MouseEvent](http://www.chenqaq.com/assets/images/debounce3.png)
+![MouseEvent](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/images/debounce3.png)
 
 但是如果在通过debounce函数，却只会打印出undefined!让我们来改善一下debounce函数
 ```js
@@ -241,4 +241,4 @@ document.getElementById("button").addEventListener('click', function(){
 })
 ```
 效果演示如下：
-![debounce cancel](http://www.chenqaq.com/assets/images/debounce3.gif)
+![debounce cancel](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/images/debounce3.gif)

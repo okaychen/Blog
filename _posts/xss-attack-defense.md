@@ -28,7 +28,7 @@ categories:
 
 下面通过一个很简单的栗子说明：textarea中的一段`<script>alert(/XSS/)</script>`很简单的恶意代码，如果前后端和浏览器的xss检测都跳过，那么这段代码就会伴随请求被上传到漏洞服务器或者客户端中，站点从数据库中或者客户端读取恶意用户存入的非法数据，然后显示在页面，在受害者主机上的浏览器执行恶意代码，那么这个xss就会成功（其实就是让用户打开这个页面弹个屏的小恶作剧），但是这里就如同上面说的那样chrome的xssAuditor帮我们检测出了异常代码，从而拦截了这个网页，阻止了这个恶作剧的发生，我们把这种注入到服务器或者客户端的恶意代码的xss攻击方式称为持久性（又叫存储型）XSS
 
-<video src="https://www.chenqaq.com/assets/videos/xss01.mp4" controls allowfullscreen="true" loop="true" autoplay="autoplay" width="100%" min-height="100%">embed: xss--chrome_test</video>
+<video src="https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/videos/xss01.mp4" controls allowfullscreen="true" loop="true" autoplay="autoplay" width="100%" min-height="100%">embed: xss--chrome_test</video>
 
 ## XSS的分类
 根据攻击的来源不同，我们通常分为三种：反射型，存储型和比较特殊的DOM型（DOM-Based XSS）
@@ -43,7 +43,8 @@ http://www.test.com/logout.asp?out=l$url=javascript:alert(document.cookie)
 我们发现URL后本来应该是正常的键值对key=value，却被注入了一段恶意代码（即构造了一个其中包含恶意代码的特殊的url），应该慎用get请求，对隐秘的信息则是避免，get请求的键值会被暴露在URL中；POST的内容也会触发反射型XSS，不过触发条件相对苛刻。
 
 当然如果地址栏看到上面两个URL，可能被轻易的看穿该链接是不可信的，但是绝不要小瞧此类XSS的威力，一般黑客都会进行精心布置，恶意URL暴露一般会进行各种编码转化，编码转换后，攻击的迷惑性大大提高
-![](https://www.chenqaq.com/assets/images/xss-encode01.png)
+
+![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/images/xss-encode01.png)
 
 ### 持久型（又叫存储型）
 我们上面提到的栗子就是一个持久型xss的示例，可以看处此类xss攻击不需要用户去点击URL进行触发，提前将恶意代码保存在了漏洞服务器或者客户端中，站点取出后会自动解析执行，相比反射型更具有攻击性，通常发生在网站的留言，评论，博客日志等交互处。

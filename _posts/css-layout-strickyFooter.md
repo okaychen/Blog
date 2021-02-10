@@ -16,20 +16,20 @@ stricky footer设计是最古老和最常见的效果之一，我们都曾经历
 <!-- more -->
 这些天做vue+express实战的练习，跟着黄轶老师倒是认识了stricky footer，就认真的了解学习了一下，但是前两天的问题，今天几种解决方案的详细情况竟然有些模糊，所以还是记录下来吧！求学之路就是这样，不断地积累和重复。
 
-![](http://www.chenqaq.com/assets/images/strickyFooter1.png)
+![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/images/strickyFooter1.png)
 
 上图底部的`x`就用到了经典的stricky footer，当页面内容足够时，它会向下推送；当页面内容没有撑满整个屏幕时，它就固定在底部。
 
 而不是像下图这样：
 
-![](http://www.chenqaq.com/assets/images/strickyFooter2.png)
+![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/images/strickyFooter2.png)
 
 
 # 问题
 
 如果此前不知道stricky footer，使用fixed固定在底部的话，像下图这样
 
-![](http://www.chenqaq.com/assets/images/strickyFooter3.png)
+![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/images/strickyFooter3.png)
 
 ```css
 position: fixed;

@@ -17,7 +17,7 @@ categories:
 
 [Can I Use FlexBox?](https://caniuse.com/#feat=flexbox)
 
-![](http://www.chenqaq.com/assets/images/css-layout-flex1.png)
+![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/images/css-layout-flex1.png)
 
 如今 flexbox 随着浏览器的发展（IE9 以下版本渐渐退出舞台），flexbox 如火如荼成为了 css 布局的主流，前端开发者的首选。
 
@@ -25,4 +25,4 @@ categories:
 
 [Can I Use Grid?](https://caniuse.com/#feat=css-grid)
 
-![](http://www.chenqaq.com/assets/images/css-layout-grid1.png)
+![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/images/css-layout-grid1.png)

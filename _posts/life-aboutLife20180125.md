@@ -15,7 +15,7 @@ categories: 岁言心语
 
 1月21号，我申请加入[掘金翻译计划](https://github.com/xitu/gold-miner)通过，并完成校对一篇文章[Vue Devtools 4.0 有哪些新内容](https://juejin.im/post/5a676c33f265da3e5b32f43c)，成为广大译者中的其中一员。这真是一个很棒的计划，有很多的译者，可以一起交流英语和技术。
 
-![](http://www.chenqaq.com/assets/images/life-0.jpg)
+![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/images/life-0.jpg)
 
 其实自己一直有一个编者梦，大学的第二个目标就是希望能够有机会成为一名签约技术小编。17年我也收到了一些邀请（比如慕课网手记，腾讯云+社区邀请），但是他们的"邀请"都不是我心中的目标，但是我也积极参与到他们当中。
 
@@ -29,7 +29,7 @@ categories: 岁言心语
 
 阿里是我大学给自己定下的第三个目标（但是遗憾我只能失去这次邀请机会，不过我回复邮件并且得到了他们的认可，今天也收到了他们的回信），期待着我的2018。
 
-![](http://www.chenqaq.com/assets/images/life-3.jpg)
+![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/images/life-3.jpg)
 
 其实我很清楚收到邮件的人不在少数。但是就这样，我成为了身边同学称的“励志的人”。但是我却清晰的认识到自己所处的位置，这并不是不自信，反而是一种自信，我能拿下的，我定赴汤蹈火。但是对于我一个大二的在校生，何敢以专家称，面对前端浩如烟海的知识面，自当愿付出10年甚至20年的韶华去专研，面对日新月日的技术栈，稍有停留，怕追上你的不是千人。
 

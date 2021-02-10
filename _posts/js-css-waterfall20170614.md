@@ -258,7 +258,7 @@ function checkScrollSlide(parent, clsName) {
 }
 ```
 最后走一波效果图
-<p><img src="https://www.chenqaq.com/assets/cnblogs_img/1140602-20170614004905400-394825169.gif" /><p>
+<p><img src="https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20170614004905400-394825169.gif" /><p>
  
 
 

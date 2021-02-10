@@ -3,7 +3,6 @@ title: "手起刀落-一起写经典的贪吃蛇游戏"
 date: 2017-12-5 23:30
 cover: "https://cdn.jsdelivr.net/gh/okaychen/CDN@1.2/BlogSource/gallery/thumb_033.jpg"
 comments: true
-top: 98
 tags:  
     - 小游戏
     - JavaScript

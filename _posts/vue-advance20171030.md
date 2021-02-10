@@ -8,7 +8,7 @@ categories:
     - Vue
 ---
 
-<fancybox>![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20171025194848754-2026039505.png)</fancybox>
+<fancybox>![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20171025194848754-2026039505.png)</fancybox>
 
 组件间通信是组件开发的，我们既希望组件的独立性，数据能互不干扰，又不可避免组件间会有联系和交互。
 
@@ -16,7 +16,7 @@ categories:
 
 在vue2.0中废弃了$dispatch和$broadcast，子组件使用event发出自定义事件
 
-<fancybox>![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20171029212721976-1727722995.png)</fancybox>
+<fancybox>![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20171029212721976-1727722995.png)</fancybox>
 
 思考场景如下：
 
@@ -128,7 +128,7 @@ export default {
 ```
 结果
  
-<fancybox>![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20171030204023230-773657287.gif)</fancybox>
+<fancybox>![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20171030204023230-773657287.gif)</fancybox>
 
 到这里，我们已经根据vue2.0父子间通信实现了上面提出的一个场景 .
 

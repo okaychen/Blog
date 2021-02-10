@@ -10,7 +10,7 @@ categories:
 
 # 写在前面
 
-<fancybox>![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20171101130631545-1261006104.png)</fancybox>
+<fancybox>![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20171101130631545-1261006104.png)</fancybox>
 
 读了博友吕大豹前辈的博文《假如大学可以重来》，我决定走心写下这篇文章：
 
@@ -24,7 +24,7 @@ categories:
 
 我相信我们的坚持总是有收获：上个月爱范儿的一个编辑作者联系我，邀请我加入了他们的vip群，就这样我的文章发表在了知名媒体爱范儿和爱范儿知晓程序等相关平台，这无疑给了我莫大的动力~ 感谢
 
-<fancybox>![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20171101130356216-1978858794.png)</fancybox>
+<fancybox>![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20171101130356216-1978858794.png)</fancybox>
 
 # 岁言心语，且听我说
 
@@ -46,9 +46,9 @@ categories:
 
 项目一点一点的做，（郑州百格教育的官网，江苏南通集团的APP，微信狗的一起团小程序，深圳政府党建网的修改工作我都有负责）业务代码写了不少，
 
-<fancybox>![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20171101184305966-1372145517.png)</fancybox>　 
+<fancybox>![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20171101184305966-1372145517.png)</fancybox>　 
 
-<fancybox>![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20171101184423232-2079524613.png)</fancybox>
+<fancybox>![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20171101184423232-2079524613.png)</fancybox>
        
 开始觉得自己需要去补充知识，继续了大一上持续学习的状态，
 

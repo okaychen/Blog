@@ -54,7 +54,7 @@ window.requestAnimFrame = (function() {
 
 ## 兼容性
 
-![requestAnimationFrame兼容性](http://www.chenqaq.com/assets/images/CheckRequestAnimationFrame.jpg)
+![requestAnimationFrame兼容性](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/images/CheckRequestAnimationFrame.jpg)
 
 主流浏览器都实现了 requestAnimationFrame 的支持，即使是 IE9-之流，通过一些优雅降级的方案，也可以做到不出错。
 

@@ -19,7 +19,7 @@ categories:
 
 塔上有三根柱子和一套直径各不相同的空心圆盘，开始时源柱子上的所有圆盘都按从大到小的顺序排列。目标是通过每一次移动一个圆盘到另一根柱子上，最终把一堆圆盘移动到目标柱子上，过程中不允许把较大的圆盘放置在较小的圆盘上；
 
-<fancybox>![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20170826161041339-1044886841.png)</fancybox>
+<fancybox>![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20170826161041339-1044886841.png)</fancybox>
 
 <!-- more -->
 
@@ -87,7 +87,7 @@ var hanoi = function(disc,src,aux,dst){
 
 hanoi(3,'A','B','C')
 ```
-<fancybox>![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20170826185640527-159094023.png)</fancybox>
+<fancybox>![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20170826185640527-159094023.png)</fancybox>
 
 整个算法的思路是：
 
@@ -97,7 +97,7 @@ hanoi(3,'A','B','C')
 
 - 最后再将B柱子上的n-1个盘子移到目标柱子C上
 
-<fancybox>![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20170826174129183-1188124420.gif)</fancybox>
+<fancybox>![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20170826174129183-1188124420.gif)</fancybox>
 
 # JS递归函数遍历Dom
 递归函数可以非常高效的操作树形结构，在JavaScript有一种"天然的树形结构"浏览器端的文档对象模型（Dom）。每次递归调用时处理指定树的一小段。
@@ -144,7 +144,7 @@ function factorial(num){
 ```
 通过将函数factorial设置为null，使原始函数的引用只剩一个, 此时factorial已不再是函数
 
-<fancybox>![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20170826193620027-806984604.png)</fancybox>
+<fancybox>![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20170826193620027-806984604.png)</fancybox>
 
 ## arguments.callee实现递归
 arguments.callee是一个指向正在执行的函数的指针，因此可以用它来实现对函数的递归调用
@@ -164,7 +164,7 @@ anotherFactorial(3) //6
 
 但是在严格模式下，不能通过脚本访问arguments.callee，访问这个属性会报错
 
-<fancybox>![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20170826194200855-11517974.png)</fancybox>
+<fancybox>![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20170826194200855-11517974.png)</fancybox>
 
 命名函数表达式实现递归
 创建一个名为f()的命名函数表达式，然后赋值给factorial，即使把函数赋值给了另一个变量，函数的名字f仍然有效，所以递归调用照样能正常完成。

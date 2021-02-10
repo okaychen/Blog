@@ -17,7 +17,7 @@ categories:
 
 vue-router是官方提供的一套专用的路由工具库，是vue的一个插件，我们需要在全局引用中通过vue.use()将它引入到vue实例中，
 
-<fancybox>![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20171107001954622-121090007.png)</fancybox>
+<fancybox>![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20171107001954622-121090007.png)</fancybox>
 
 <!-- more -->
 
@@ -114,7 +114,7 @@ vue-router提供两个指令标签组件来处理这个导航与自动渲染逻�
 - `<router-link>`——支持用户在具有路由功能的应用中导航
 我们使用整两个标签组件来完成一个简单的页面布局：
 
-<fancybox>![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20171107124955231-721484257.png)</fancybox>
+<fancybox>![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20171107124955231-721484257.png)</fancybox>
 
 在路由使用时要明确一个原则就是：不直接引用路由定义，（即不要在router-link直接通过 to='conpontents/rank/rank' 来导向路由），当显式引用路由定义的URL一旦发生变化，所有引用的地方都要修改。
 
@@ -158,7 +158,7 @@ export default {
 
 我们利用下面的场景，首页/home/读书详情 页面，读书详情也我们不需要底部的导航区域，但是我们使用之前的路由定义，所有的页面都应该具有想用的底部导航条，按前面的路由结构是不可以导航到图书详情页的，如下：
 
-<fancybox>![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20171107172657200-669562006.png)</fancybox>
+<fancybox>![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20171107172657200-669562006.png)</fancybox>
 
 所以我们就需要另一种定义路由的方式，对前面的路由进行调整，
 

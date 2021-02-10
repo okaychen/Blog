@@ -8,7 +8,7 @@ categories:
     - JavaScript
 ---
 
-![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20170521131215853-1429491603.png)
+![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20170521131215853-1429491603.png)
 
 Angular4.0来了，更小，更快，改动少
 
@@ -49,7 +49,7 @@ ng set --global packageManager = cnpm
 ```
 然后我们的项目就创建完成了
 
-![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20170521134325432-1354080667.png)
+![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20170521134325432-1354080667.png)
 
 我们会发现在文档中有很多文件，这里参考[Angular](https://angular.cn/)官方文档 ，以便认识这些文件的作用。
 
@@ -63,7 +63,7 @@ cnpm install jquery --save
 我们在项目中就添加了bootstrap和jQuery，我们可以在node_modules文件夹中找到他们（这个文件夹放的是第三方库）；
 
 然后我们需要操作.angular-cli.json文件，把bootstrap和jQuery添加进去:
-![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20170521135435088-196815303.png)
+![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/assets/cnblogs_img/1140602-20170521135435088-196815303.png)
 这里需要注意的是：因为angular用的是微软开发的typescript语言，我们需要在终端做下面的操作，以便让typescript认识bootstrap和jQuery一些字符（比如jQuery的$）：
 ```js
 cnpm install @types/bootstrap --save-dev

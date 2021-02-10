@@ -15,5 +15,5 @@ categories:
 
 <!-- more -->
 
-![demo](https://www.chenqaq.com/assets/images/node_cheerio01.png)
+![demo](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/images/node_cheerio01.png)
 

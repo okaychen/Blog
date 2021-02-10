@@ -12,8 +12,8 @@ categories:
 
 行走匆忙的人，不一定是无心观赏两岸的风景，只是为了心中的彼岸
 
-![morning](http://www.chenqaq.com/assets/images/morning.jpg)
+![morning](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/images/morning.jpg)
 
-![night](http://www.chenqaq.com/assets/images/night.jpg)
+![night](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/images/night.jpg)
 
 <!-- more -->

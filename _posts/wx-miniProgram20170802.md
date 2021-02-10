@@ -13,7 +13,7 @@ categories:
 
 # 效果图
 
-<img src="https://www.chenqaq.com/assets/cnblogs_img/1140602-20170802200717553-132653419.gif" alt="">
+<img src="https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20170802200717553-132653419.gif" alt="">
 
 <!-- more -->
 

@@ -29,7 +29,7 @@ wx.request({
 ```
 在控制台中也得到了我想要的接口中的数据：
 
-<fancybox>![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20171011130151684-1534935555.png)</fancybox>
+<fancybox>![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20171011130151684-1534935555.png)</fancybox>
 
 但期间也遇到了几个问题，总结下来；
 
@@ -48,13 +48,13 @@ wx.request({
 
 关于“URL 域名不合法，请在后台配置后重试”的错误
 
-<fancybox>![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20171011184932012-1926871764.png)</fancybox>
+<fancybox>![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20171011184932012-1926871764.png)</fancybox>
 
 小程序只允许与合法配置的域名进行数据交互
 
 进入微信公共平台=>设置=>开发设置：设置需要交互的域名
 
-<fancybox>![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20171011190502621-1772459677.png)</fancybox>
+<fancybox>![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20171011190502621-1772459677.png)</fancybox>
 
 # 2）对于接口调用http和https的问题
 对于这一个问题，在之前来说，微信公共平台支持使用http测试项目，但是正式发布需要使用https的域名，

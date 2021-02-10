@@ -13,7 +13,7 @@ categories:
 # 实例1：滚动tab选项卡
 先看一下效果图吧，能够点击菜单或滑动页面切换，tab菜单部分可以实现左右滚动
 
-<fancybox>![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20171001014258465-572247537.gif)</fancybox>
+<fancybox>![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20171001014258465-572247537.gif)</fancybox>
 
 好了，看一下我的源码吧！<有用的话拿走不谢哟，随版本更新代码可能会有出入>
 
@@ -168,7 +168,7 @@ Page({
 # 实例2：星级评分
 按照惯例先上效果图，默认一星，点击可以选择星级，可半星显示。
 
-<fancybox>![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20171001014822231-1217322466.gif)</fancybox>
+<fancybox>![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20171001014822231-1217322466.gif)</fancybox>
 
 1、wxml
 ```html
@@ -357,7 +357,7 @@ okaychen
 # 实例3：自定义底部弹出层
 自定义底部弹出层，在电商的小程序中经常会用到，根据需要自定义弹出内容，先看下我的效果
 
-<fancybox>![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20171001015101122-327854098.gif)</fancybox>
+<fancybox>![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20171001015101122-327854098.gif)</fancybox>
 
 我已经把我自定义的部分抽离了出来
 

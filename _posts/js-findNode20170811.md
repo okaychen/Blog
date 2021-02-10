@@ -11,7 +11,7 @@ categories:
 
 我们在实际的开发中，经常要获取页面中某个html元素，动态更新元素的样式、内容属性等。
 
-<img src="https://www.chenqaq.com/assets/cnblogs_img/1140602-20170811173058398-1140296284.gif" alt="">
+<img src="https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20170811173058398-1140296284.gif" alt="">
 
 我们已经知道在JavaScript中提供下面的方法获取子、父、兄节点的方法：
 
@@ -90,7 +90,7 @@ JQuery.sibling = function(n,elem){
 ```
 在jQuery 1.2多的版本中都可以找到这段代码，我看的jQuery1.2.3的版本，在1800行可以找到这段代码:
 
-![](https://www.chenqaq.com/assets/cnblogs_img/1140602-20170811160458570-1191181173.png)
+![](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/cnblogs_img/1140602-20170811160458570-1191181173.png)
 
 把这个方法转化为独立可用的函数：
 ```js

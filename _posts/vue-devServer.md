@@ -9,12 +9,11 @@ tags:
     - Webpack
     - 构建工具
 categories:
-    - 构建工具
+    - Vue
 ---
 
 我们想要给我们的mock data 找一个接口请求，原版配置在 dev-server.js ，新版的 vue-webpack-template 删除了dev-server.js，改用webpcak.dev.conf.js代替（具体更新见[github：switch to webpack-dev-server](https://github.com/vuejs-templates/webpack/pull/975)）
 
-![switch to webpack-dev-server](http://www.chenqaq.com/assets/images/vuecli1.png)
 <!-- more -->
 ```js
 // # webpack.dev.conf.js
@@ -61,7 +60,7 @@ before(app){
 
 关于`devServer.before()` webpack有很详细的解释，并且给出了一个例子，它提供了在服务器内部所有中间件之前执行的自定义中间件的能力，用它可以来自定义处理程序
 
-![devServer.before](http://www.chenqaq.com/assets/images/webpack1.png)
+![devServer.before](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/images/webpack1.png)
 
 
 修改完配置之后，我们需要重新运行命令`npm run dev`重新编译即可
@@ -71,7 +70,7 @@ before(app){
 http://localhost:8080/api/seller
 ```
 
-![api/seller](http://www.chenqaq.com/assets/images/vuecli-json1.png)
+![api/seller](https://cdn.jsdelivr.net/gh/okaychen/CDN@2.2/BlogSource/images/vuecli-json1.png)
 
 同样的，我们访问
 ```js
